@@ -1,0 +1,120 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- PAQUETES ---
+\usepackage[a4paper, margin=1in]{geometry} % Márgenes estándar
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{helvet} % Tipografía sans-serif (Helvetica)
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% --- CONFIGURACIÓN DE LISTAS ---
+\setlist[itemize]{leftmargin=*, nosep}
+
+% --- COLORES ---
+\definecolor{primarycolor}{HTML}{003B6F} % Azul oscuro profesional
+\definecolor{graytext}{HTML}{444444}
+
+% --- FORMATO DE SECCIONES ---
+% Línea horizontal debajo de los títulos de sección (también funciona con \section*)
+\titleformat{\section}
+  {\Large\bfseries\color{black}}
+  {} % sin etiqueta/numero
+  {0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{10pt}
+
+% --- ENLACES (debe ir al final) ---
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primarycolor,
+  urlcolor=primarycolor
+}
+
+% --- DOCUMENTO ---
+\pagestyle{empty} % Sin números de página
+
+\begin{document}
+
+% --- ENCABEZADO: NOMBRE Y CONTACTO ---
+\begin{center}
+    {\Huge \bfseries David Armando Ramírez Navarrete}\\[8pt]
+    \color{graytext}
+    Ciudad de México, México \\
+    navarreteram.david@gmail.com \textbar{} +52 747 102 2550
+\end{center}
+
+\vspace{8pt}
+
+% --- PERFIL PROFESIONAL ---
+\section*{Perfil Profesional}
+Ingeniero en Sistemas Computacionales con experiencia en desarrollo de aplicaciones web y entornos mainframe. Apasionado por la programación, con enfoque en soluciones eficientes e innovadoras. Comprometido con el aprendizaje continuo y la mejora de habilidades técnicas, especialmente en desarrollo de software. Adaptable, proactivo y con alta capacidad para trabajar en equipo y adoptar nuevas tecnologías.
+
+% --- EXPERIENCIA PROFESIONAL ---
+\section*{Experiencia Profesional}
+
+\textbf{NTT DATA - BBVA} \hfill \textit{Julio 2025 -- Actualidad} \\
+\textit{Becario COBOL}
+\begin{itemize}
+  \item Revisión de documentación por cambios productivos post instalación y validación de componentes.
+  \item Creación de tablas dinámicas y reportes de productividad con Google Looker Studio.
+  \item Administración y control de periodos vacacionales y ejecución de despliegues en desarrollo.
+  \item \textbf{Herramientas Clave:} Google Looker Studio, Google App Script, Jira, Google Sheets.
+\end{itemize}
+
+\vspace{10pt}
+
+\textbf{NTT Data} \hfill \textit{Marzo 2025 -- Julio 2025} \\
+\textit{Programa de Formación COBOL}
+\begin{itemize}
+  \item Desarrollo y mantenimiento de programas COBOL para procesos bancarios.
+  \item Optimización de consultas SQL en entornos mainframe.
+  \item Implementación de soluciones en JCL y DB2 y colaboración en equipos Agile.
+\end{itemize}
+
+\vspace{10pt}
+
+\textbf{Google Cloud Platform (GCP) - Proyecto Personal} \hfill \textit{Marzo 2024 -- Marzo 2025} \\
+\textit{Desarrollador Cloud}
+\begin{itemize}
+  \item Configuración de entornos, gestión de máquinas virtuales y automatización de tareas en GCP.
+  \item Documentación y monitoreo de sistemas para la entrega de soluciones escalables.
+\end{itemize}
+
+% --- EDUCACIÓN ---
+\section*{Educación}
+\textbf{Universidad Virtual del Estado de Guanajuato} \hfill \textit{} \\
+\textit{Ingeniería en Sistemas Computacionales}
+
+% --- HABILIDADES TÉCNICAS Y BLANDAS ---
+\section*{Habilidades}
+\begin{itemize}
+    \item \textbf{Lenguajes de Programación:} Java, JavaScript, Python, COBOL
+    \item \textbf{Bases de Datos y Consultas:} SQL, QMF, DB2
+    \item \textbf{Control de Versiones:} ChangeMan, Git, Bitbucket
+    \item \textbf{Metodologías:} Marco de Trabajo Agile, Waterfall
+    \item \textbf{Plataformas y Otros:} Google Cloud Platform, TSO, ISPF, JCL
+    \item \textbf{Habilidades Blandas:} Trabajo en Equipo, Adaptabilidad, Resolución de Problemas, Autodidacta.
+\end{itemize}
+
+% --- CERTIFICACIONES Y CURSOS ---
+\section*{Certificaciones y Cursos}
+\begin{itemize}
+  \item Certificación HOST Standard (Desarrollo Seguro)
+  \item Scrum Master
+  \item Google Cloud Computing Foundations (Google)
+  \item Oracle Next Education -- G3 (Alura Latam)
+\end{itemize}
+
+% --- IDIOMAS ---
+\section*{Idiomas}
+\begin{itemize}
+    \item \textbf{Español:} Nativo
+    \item \textbf{Inglés:} Nivel B1 (Intermedio)
+\end{itemize}
+
+\end{document}

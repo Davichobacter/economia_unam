@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.21)  20 SEP 2025 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.21)  5 OCT 2025 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/ramir/OneDrive/Documentos/economia_unam/APA_Latex_ENG.tex
-(c:/Users/ramir/OneDrive/Documentos/economia_unam/APA_Latex_ENG.tex
+**c:/Users/ramir/OneDrive/Documentos/economia_unam/EP1_W8.tex
+(c:/Users/ramir/OneDrive/Documentos/economia_unam/EP1_W8.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/apa7\apa7.cls
@@ -873,37 +873,37 @@ LaTeX Info: Redefining \hbar on input line 50.
 \c@NumberOfSuperscripts=\count462
 
 
-Class apa7 Warning: Deprecated: see documentation for \authorsaffiliations on input line 43.
+Class apa7 Warning: Deprecated: see documentation for \authorsaffiliations on input line 24.
 
 \c@NumberOfAffiliations=\count463
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'american'.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 51.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 32.
 (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\APA_Latex_ENG.aux)
-\openout1 = `APA_Latex_ENG.aux'.
+) (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux)
+\openout1 = `EP1_W8.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -958,10 +958,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 51.
- (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\APA_Latex_ENG.out) (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\APA_Latex_ENG.out)
+Package hyperref Info: Link coloring OFF on input line 32.
+ (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out) (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out)
 \@outlinefile=\write7
-\openout7 = `APA_Latex_ENG.out'.
+\openout7 = `EP1_W8.out'.
 
  (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/apa7/config\APA7american.txt
 File: APA7american.txt 2020/12/02 v1.02 apa7 configuration for American English
@@ -1006,122 +1006,41 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `APA_Latex_ENG.bcf'.
+\openout6 = `EP1_W8.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'APA_Latex_ENG.bbl' not found.
-
-No file APA_Latex_ENG.bbl.
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
+Package biblatex Info: ... file 'EP1_W8.bbl' found.
+ (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bbl)
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
 \big@size=\dimen291
-[1{C:/Users/ramir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+ [1{C:/Users/ramir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
-] [2]
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 60.
- (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+] [2] [3] [4] [5] AED endfloat: Processing end Figures and Tables [6
 
-
-LaTeX Warning: Citation 'Sample2024' on page 3 undefined on input line 62.
-
-
-LaTeX Warning: Citation '' on page 3 undefined on input line 62.
-
-
-LaTeX Warning: Citation 'FullBook2021' on page 3 undefined on input line 62.
-
-
-LaTeX Warning: Citation 'Multiauthor2020' on page 3 undefined on input line 63.
-
-
-LaTeX Warning: Citation 'Multiauthor2020' on page 3 undefined on input line 63.
-
-[3] [4] [5]
-
-LaTeX Warning: Reference `fig:OverallEffect' on page 6 undefined on input line 141.
-
-[6]
-
-LaTeX Warning: Citation 'Contributor2023' on page 7 undefined on input line 164.
-
-
-LaTeX Warning: Citation '' on page 7 undefined on input line 164.
-
-
-LaTeX Warning: Citation 'Sample2024' on page 7 undefined on input line 164.
-
-[7]
-
-LaTeX Warning: Empty bibliography on input line 173.
-
-AED endfloat: Processing end Figures and Tables [8] (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\APA_Latex_ENG.aux)
+] (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `APA_Latex_ENG.out' has not changed.
-(rerunfilecheck)             Checksum: 17ACC19FDC8F010ED4E5D25CFBCEEBF9;1700.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                APA_Latex_ENG
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'APA_Latex_ENG.run.xml'.
-\openout1 = `APA_Latex_ENG.run.xml'.
+Package rerunfilecheck Info: File `EP1_W8.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'EP1_W8.run.xml'.
+\openout1 = `EP1_W8.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32427 strings out of 474486
- 626390 string characters out of 5743755
- 1934542 words of memory out of 5000000
- 54181 multiletter control sequences out of 15000+600000
- 592755 words of font info for 77 fonts, out of 8000000 for 9000
+ 32280 strings out of 474486
+ 623539 string characters out of 5743755
+ 1932542 words of memory out of 5000000
+ 54079 multiletter control sequences out of 15000+600000
+ 569739 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,107p,959b,5237s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on c:\Users\ramir\OneDrive\Documentos\economia_unam\build\APA_Latex_ENG.pdf (8 pages, 89089 bytes).
+ 99i,11n,107p,935b,5237s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.pdf (6 pages, 61672 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

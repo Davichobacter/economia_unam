@@ -1,0 +1,144 @@
+\documentclass[stu,12pt,floatsintext]{apa7}
+
+
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa} % APA (7.ª con biblatex-apa actual)
+\addbibresource{Bib.bib} % Bibliography file
+
+
+\DefineBibliographyStrings{american}{
+  references = {Referencias},
+}
+
+\usepackage[T1]{fontenc} 
+\usepackage{mathptmx} 
+
+% Title page stuff _____________________
+\title{Semana 8 - La Fisiocracia a través de Marx y Napoleoni} % The big, long version of the title for the title page
+% \shorttitle{APA Starter} % The short title for the header
+\author{David Armando Ramirez Navarrete}
+\duedate{05 octubre 2025}
+% \date{January 17, 2024} The student version doesn't use the \date command, for whatever reason
+\affiliation{Facultad de Economía (UNAM)}
+\course{Economía Política I} % LaTeX gets annoyed (i.e., throws a grumble-error) if this is blank, so I put something here. However, if your instructor will mark you off for this being on the title page, you can leave this entry blank (delete the PSY 4321, but leave the command), and just make peace with the error that will happen. It won't break the document.
+\professor{Gabriela Téllez Arriaga}  % Same situation as for the course info. Some instructors want this, some absolutely don't and will take off points. So do what you gotta.
+
+% \abstract{This is the abstract for this paper, wherein the main points of the introduction, method, results, and discussion are quickly talked about. Probably in more than one sentence, though. Dare I guess, more than two? There is a page break before starting the Introduction.}
+
+%\keywords{APA style, demonstration} % If you need to have keywords for your paper, delete the % at the start of this line
+
+\begin{document}
+
+\maketitle
+
+\section*{Introducción}
+
+La escuela de la fisiocracia, surgida en Francia a mediados del siglo XVIII, constituye un hito fundamental en la historia del pensamiento económico. En un contexto dominado por la economía agraria y en transición desde el sistema mercantilista y el feudalismo, los fisiócratas intentaron comprender el sistema económico como un organismo regido por leyes necesarias, fundando así las bases de la economía política moderna. Su propósito central fue identificar un orden natural de la sociedad mercantil, un paradigma que, libre de obstáculos políticos y administrativos, permitiría maximizar la riqueza y el bienestar colectivo (\cite{napoleoni1981}).
+
+El análisis de los fisiócratas fue especialmente relevante para Claudio Napoleoni, quien exploró las categorías fundamentales de esta escuela, la dinámica del equilibrio global mediante el Tableau économique y las limitaciones teóricas que posteriormente heredarían los economistas clásicos. Para Karl Marx, en cambio, la fisiocracia fue el punto de partida de la crítica de la economía política: consideró a los fisiócratas los "verdaderos padres de la economía moderna", pues trasladaron la investigación sobre el origen del excedente, plusvalía, de la esfera de la circulación a la esfera de la producción (\cite{marx1965}). En esta transferencia se halla la génesis de la comprensión científica del capital, aunque el sistema fisiocrático combinara una envoltura feudal con un contenido burgués.
+
+\section*{El análisis fisiocrático en la visión de Napoleoni}
+
+\textcite{napoleoni1981} interpreta la fisiocracia desde la realidad de la Francia \textit{pre-revolucionaria}, donde predominaba una economía mercantil agrícola. En ese contexto, la gestión capitalista en el campo, a través de los arrendatarios burgueses, había demostrado una eficiencia superior respecto a las formas campesinas. Esta constatación llevó a los fisiócratas a exaltar la dirección capitalista como la forma más avanzada de organización productiva.
+
+El concepto central de la escuela es el excedente o produit net, definido como la parte de la riqueza producida que excede el consumo necesario en el proceso de producción. Este excedente constituye la base del crecimiento, ya que posibilita tanto el consumo ampliado como la inversión. Sin embargo, Napoleoni destaca que los fisiócratas restringieron la formación del excedente exclusivamente a la agricultura, atribuyéndolo a la fertilidad natural de la tierra, entendida como fuente originaria de riqueza. De esta manera, solo el trabajo agrícola se consideraba ``productivo'', en la medida en que era capaz de generar un produit net.
+
+La fisiocracia, señala \textcite{napoleoni1981}, carece de una teoría del valor que permita medir rigurosamente el excedente. Por ello, el cálculo del produit net se basó en magnitudes físicas y, posteriormente, en precios de mercado tomados de forma empírica. Esta dependencia de los precios socavó el intento de sostener la supremacía teórica de la agricultura sobre la manufactura.
+
+En cuanto a la atribución del excedente, Napoleoni indica que los fisiócratas lo resolvieron completamente en la renta territorial, ignorando el beneficio capitalista como categoría autónoma. Incluso en la agricultura capitalista, el beneficio del arrendatario era visto como un ingreso transitorio que, al renovarse los contratos, sería absorbido por la renta del propietario. Así, la fisiocracia, pese a reconocer la existencia del capitalista agrícola, no identificó el beneficio como una forma particular del excedente.
+
+El Tableau économique de François Quesnay representa, según \textcite{napoleoni1981}, el primer intento de modelar el equilibrio global del sistema económico. En él se distinguen tres clases: la productiva (agricultores capitalistas), la estéril (manufactureros y artesanos) y la propietaria (terratenientes y Estado). El Tableau muestra la circulación de la riqueza entre estas clases y cómo la amplitud del ciclo económico depende del tamaño del produit net. Este esquema simboliza el ordre naturel, en el que la producción y la distribución se autorregulan en equilibrio, siempre que las fuerzas sociales actúen libremente sin interferencia gubernamental.
+
+\section*{Aportes y adiciones teóricas de Marx al análisis de la fisiocracia}
+
+El análisis de Napoleoni sobre la fisiocracia ofrece una interpretación estructural, pero Karl Marx introduce una lectura histórico-materialista que explica las contradicciones de ese sistema. Para \textcite{marx1965}, los fisiócratas fueron los primeros en ubicar correctamente el origen del excedente en la producción, pero su error radicó en reducirlo a un fenómeno natural, no social.
+
+\begin{enumerate}
+  \item \textbf{Reinterpretación del excedente como plus-trabajo.} La contribución más decisiva de Marx es la reinterpretación del produit net como plusvalía basada en el plustrabajo. Mientras que los fisiócratas consideraban el excedente un “don de la naturaleza”, \textcite{marx1965} lo concibe como el resultado del trabajo no remunerado apropiado por el capitalista. Así, transforma la explicación naturalista del excedente en una teoría del valor basada en el tiempo de trabajo. Aunque \textcite{napoleoni1981} señala que los fisiócratas carecían de una teoría del valor, Marx demuestra que su análisis implicaba, de manera implícita, una distinción entre trabajo necesario y excedente, prefigurando el concepto de plusvalía.
+  \item \textbf{La contradicción estructural: envoltura feudal y contenido burgués.} \textcite{marx1965} identifica una contradicción fundamental en el pensamiento fisiocrático: su visión de la sociedad combina una estructura feudal con un contenido burgués. Los fisiócratas conciben la producción capitalista, pero mantienen al terrateniente como el principal beneficiario del excedente. Esto refleja una época de transición, donde la agricultura capitalista coexistía con relaciones feudales. Según Marx, la fisiocracia describe las leyes de la producción capitalista bajo la forma de una “reproducción feudal del capital”, lo que explica por qué la renta —y no la ganancia— aparece como la forma universal del excedente.
+  \item \textbf{Generalización de la plusvalía y la renta como forma general.} Mientras \textcite{napoleoni1981} observa que el excedente se limita a la renta, \textcite{marx1965} interpreta esta limitación como una forma histórica determinada de la plusvalía. La renta de la tierra se convierte, en el sistema fisiocrático, en la forma general del excedente social, de la cual derivan las demás: la ganancia industrial y el interés. De este modo, Marx revela que la fisiocracia no es una simple teoría agrícola, sino una representación primitiva de las relaciones capitalistas de explotación.
+  \item \textbf{La conexión entre el excedente y el laissez-faire.} Finalmente, \textcite{marx1965} vincula la teoría fisiocrática del excedente con su defensa del laissez-faire. Dado que la industria se consideraba “estéril”, debía operar sin trabas y con el menor costo posible, lo que justificaba la libre competencia y la mínima intervención estatal. \textcite{napoleoni1981} también destaca esta dimensión liberal, pero Marx la interpreta críticamente: el laissez-faire servía, en última instancia, a los intereses del terrateniente transformado en capitalista, asegurando la reproducción del orden económico dominante.
+\end{enumerate}
+
+\section*{Conclusión}
+
+Claudio Napoleoni ofrece una lectura rigurosa de la fisiocracia como un sistema de pensamiento que por primera vez sitúa el origen del excedente en la producción y concibe la economía como un organismo coherente. Su análisis del Tableau économique de Quesnay revela tanto el mérito de los fisiócratas como sus limitaciones teóricas, especialmente la ausencia de una teoría del valor y la reducción del excedente a la renta territorial.
+
+Karl Marx, reconociendo la importancia fundacional de la fisiocracia, amplía y reinterpreta su alcance. Sustituye el concepto naturalista de excedente por el de plusvalía, fundado en el trabajo humano, y explica las contradicciones internas del sistema como reflejo de una sociedad en transición entre el feudalismo y el capitalismo. En su crítica, la renta deja de ser el destino exclusivo del excedente y pasa a ser una forma derivada de la plusvalía general, comprendida dentro de la dinámica de acumulación del capital.
+
+Así, el análisis marxista no solo corrige las limitaciones del modelo fisiocrático, sino que revela su papel histórico como antecedente necesario de la economía política moderna. La fisiocracia, interpretada por Napoleoni y revisada por Marx, aparece entonces como un puente conceptual entre la economía moral del Antiguo Régimen y la ciencia económica del capitalismo.
+
+\printbibliography
+
+\end{document}
+
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Daniel A. Weiss.
+%% 
+%% This work consists of the file  apa7.dtx
+%% and the derived files           apa7.ins,
+%%                                 apa7.cls,
+%%                                 apa7.pdf,
+%%                                 README,
+%%                                 APA7american.txt,
+%%                                 APA7british.txt,
+%%                                 APA7dutch.txt,
+%%                                 APA7english.txt,
+%%                                 APA7german.txt,
+%%                                 APA7ngerman.txt,
+%%                                 APA7greek.txt,
+%%                                 APA7czech.txt,
+%%                                 APA7turkish.txt,
+%%                                 APA7endfloat.cfg,
+%%                                 Figure1.pdf,
+%%                                 shortsample.tex,
+%%                                 longsample.tex, and
+%%                                 bibliography.bib.
+%% 
+%%
+%%
+%% This is file `./samples/shortsample.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% apa7.dtx  (with options: `shortsample')
+%% ----------------------------------------------------------------------
+%% 
+%% apa7 - A LaTeX class for formatting documents in compliance with the
+%% American Psychological Association's Publication Manual, 7th edition
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% ----------------------------------------------------------------------

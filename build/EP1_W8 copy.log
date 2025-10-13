@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.21)  12 OCT 2025 22:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.21)  12 OCT 2025 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/ramir/OneDrive/Documentos/economia_unam/EP1_W8 copy.tex
-(c:/Users/ramir/OneDrive/Documentos/economia_unam/EP1_W8.tex
+**"c:/Users/ramir/OneDrive/Documentos/economia_unam/EP1_W8 copy.tex"
+(c:/Users/ramir/OneDrive/Documentos/economia_unam/EP1_W8 copy.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/apa7\apa7.cls
@@ -883,8 +883,8 @@ Package csquotes Info: Redefining alias 'default' -> 'american'.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 32.
 (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux)
-\openout1 = `EP1_W8.aux'.
+) (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.aux)
+\openout1 = `"EP1_W8 copy.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -959,9 +959,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 32.
- (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out) (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out)
 \@outlinefile=\write7
-\openout7 = `EP1_W8.out'.
+\openout7 = `"EP1_W8 copy.out"'.
 
  (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/apa7/config\APA7american.txt
 File: APA7american.txt 2020/12/02 v1.02 apa7 configuration for American English
@@ -1006,41 +1005,134 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `EP1_W8.bcf'.
+\openout6 = `"EP1_W8 copy.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'EP1_W8.bbl' found.
- (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bbl)
+Package biblatex Info: ... file '"EP1_W8 copy".bbl' not found.
+
+No file "EP1_W8 copy".bbl.
 Package biblatex Info: Reference section=0 on input line 32.
 Package biblatex Info: Reference segment=0 on input line 32.
 \big@size=\dimen291
- [1{C:/Users/ramir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+[1{C:/Users/ramir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
-] [2] [3] [4] [5] AED endfloat: Processing end Figures and Tables [6
+]
 
-] (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux)
+LaTeX Warning: Citation 'napoleoni1981' on page 2 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'marx1965' on page 2 undefined on input line 40.
+
+
+LaTeX Warning: Citation 'napoleoni1981' on page 2 undefined on input line 44.
+
+
+LaTeX Warning: Citation '' on page 2 undefined on input line 44.
+
+[2]
+
+LaTeX Warning: Citation 'napoleoni1981' on page 3 undefined on input line 48.
+
+
+LaTeX Warning: Citation '' on page 3 undefined on input line 48.
+
+
+LaTeX Warning: Citation 'napoleoni1981' on page 3 undefined on input line 52.
+
+
+LaTeX Warning: Citation '' on page 3 undefined on input line 52.
+
+
+LaTeX Warning: Citation 'marx1965' on page 3 undefined on input line 56.
+
+
+LaTeX Warning: Citation '' on page 3 undefined on input line 56.
+
+[3]
+
+LaTeX Warning: Citation 'marx1965' on page 4 undefined on input line 59.
+
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 59.
+
+
+LaTeX Warning: Citation 'napoleoni1981' on page 4 undefined on input line 59.
+
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 59.
+
+
+LaTeX Warning: Citation 'marx1965' on page 4 undefined on input line 60.
+
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 60.
+
+
+LaTeX Warning: Citation 'napoleoni1981' on page 4 undefined on input line 61.
+
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'marx1965' on page 4 undefined on input line 61.
+
+
+LaTeX Warning: Citation '' on page 4 undefined on input line 61.
+
+[4]
+
+LaTeX Warning: Citation 'marx1965' on page 5 undefined on input line 62.
+
+
+LaTeX Warning: Citation '' on page 5 undefined on input line 62.
+
+
+LaTeX Warning: Citation 'napoleoni1981' on page 5 undefined on input line 62.
+
+
+LaTeX Warning: Citation '' on page 5 undefined on input line 62.
+
+
+LaTeX Warning: Empty bibliography on input line 73.
+
+AED endfloat: Processing end Figures and Tables [5] (c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `EP1_W8.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'EP1_W8.run.xml'.
-\openout1 = `EP1_W8.run.xml'.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `"EP1_W8 copy".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"EP1_W8 copy".out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                "EP1_W8 copy"
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to '"EP1_W8 copy".run.xml'.
+\openout1 = `"EP1_W8 copy.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32280 strings out of 474486
- 623539 string characters out of 5743755
+ 32215 strings out of 474486
+ 621916 string characters out of 5743755
  1932542 words of memory out of 5000000
- 54079 multiletter control sequences out of 15000+600000
+ 54024 multiletter control sequences out of 15000+600000
  569739 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,107p,940b,5237s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,942b,5237s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ramir/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.pdf (6 pages, 61672 bytes).
+Output written on "c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.pdf" (5 pages, 55247 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
+ 58 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,7 @@
 PWD c:\Users\ramir\OneDrive\Documentos\economia_unam
 INPUT C:\Users\ramir\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\EP1_W8.tex
-OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.log
+INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\EP1_W8 copy.tex
+OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.log
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\apa7\apa7.cls
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\apa7\apa7.cls
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -300,10 +300,10 @@ INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux
-OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux
+INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.aux
+INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.aux
+INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.aux
+OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.aux
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -312,14 +312,8 @@ INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.pdf
+OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.out
+OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.pdf
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\apa7\config\APA7american.txt
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\apa7\config\APA7american.txt
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\apa7\config\APA7american.txt
@@ -343,12 +337,7 @@ INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\americ
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
-OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bcf
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bbl
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bbl
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bbl
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bbl
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.bbl
+OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.bcf
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
@@ -359,10 +348,10 @@ INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.aux
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.out
-OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8.run.xml
+INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.aux
+INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.out
+INPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.out
+OUTPUT c:\Users\ramir\OneDrive\Documentos\economia_unam\build\EP1_W8 copy.run.xml
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\ramir\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb

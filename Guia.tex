@@ -1,0 +1,1198 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+
+% Configuración de márgenes
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% Configuración de colores para código
+\definecolor{codegray}{gray}{0.95}
+\definecolor{keywordcolor}{rgb}{0.0, 0.0, 0.5}
+\definecolor{stringcolor}{rgb}{0.5, 0.0, 0.0}
+\definecolor{commentcolor}{rgb}{0.0, 0.5, 0.0}
+
+% Configuración de listings
+\lstset{
+  backgroundcolor=\color{codegray},
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{commentcolor},
+  keywordstyle=\color{keywordcolor},
+  stringstyle=\color{stringcolor},
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  showstringspaces=false,
+  tabsize=2,
+  language=Java
+}
+
+% Configuración de hiperenlaces
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+% Títulos personalizados
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Guía Java para Programadores COBOL}
+\lhead{}
+\rfoot{\thepage}
+
+\title{\textbf{Guía Completa de Java para Programadores COBOL}}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+\subsection{Principales Diferencias COBOL $\rightarrow$ Java} 
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{COBOL} & \textbf{Java} \\
+\hline
+Procedural & Orientado a Objetos \\
+Tipado estático débil & Tipado estático fuerte \\
+División en secciones & Clases y métodos \\
+WORKING-STORAGE & Variables locales/atributos \\
+PERFORM & Llamadas a métodos \\
+COPY & Herencia/Composición \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Configuración del Entorno}
+
+\begin{lstlisting}
+// Hola Mundo en Java
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("HOLA MUNDO DESDE JAVA");
+    }
+}
+
+// Equivalente COBOL:
+// IDENTIFICATION DIVISION.
+// PROGRAM-ID. HOLAMUNDO.
+// PROCEDURE DIVISION.
+//     DISPLAY 'HOLA MUNDO DESDE COBOL'.
+//     STOP RUN.
+\end{lstlisting}
+
+\section{Sintaxis Básica Comparada}
+
+\subsection{Declaración de Variables}
+
+\begin{lstlisting}
+// JAVA
+public class VariablesEjemplo {
+    public static void main(String[] args) {
+        // Variables primitivas
+        int contador = 0;                    // PIC 9(9) COMP
+        long numeroGrande = 123456789L;      // PIC 9(18) COMP
+        double salario = 50000.50;           // PIC 9(7)V99 COMP-3
+        boolean activo = true;               // 88 NIVEL
+        
+        // Cadenas (objetos, no primitivas)
+        String nombre = "Juan Pérez";        // PIC X(50)
+        
+        // Constantes
+        final double TASA_IMPUESTO = 0.21;   // 01 TASA-IMPUESTO CONSTANT 0.21
+        
+        // Arrays (tablas)
+        int[] ventasMensuales = new int[12]; // 01 VENTAS-MENSUALES OCCURS 12 TIMES PIC 9(7)
+    }
+}
+
+// COBOL equivalente:
+// 01 CONTADOR        PIC 9(9) COMP VALUE 0.
+// 01 NUMERO-GRANDE   PIC 9(18) COMP VALUE 123456789.
+// 01 SALARIO          PIC 9(7)V99 COMP-3 VALUE 50000.50.
+// 01 ACTIVO           PIC X VALUE 'S'.
+//    88 ACTIVO-TRUE   VALUE 'S'.
+//    88 ACTIVO-FALSE  VALUE 'N'.
+// 01 NOMBRE           PIC X(50) VALUE 'Juan Pérez'.
+// 01 TASA-IMPUESTO    CONSTANT 0.21.
+// 01 VENTAS-MENSUALES OCCURS 12 TIMES PIC 9(7).
+\end{lstlisting}
+
+\subsection{Estructura de un Programa Java}
+
+\begin{lstlisting}
+// ESTRUCTURA BÁSICA JAVA vs COBOL
+
+// JAVA
+package com.empresa.proyecto;          // Similar a PROGRAM-ID con namespace
+
+import java.util.*;                    // Similar a COPY
+
+public class ProcesoNomina {           // Similar a PROGRAM-ID
+    // WORKING-STORAGE SECTION
+    private static final double BONO = 1000.0;
+    private int totalEmpleados;
+    
+    // PROCEDURE DIVISION
+    public static void main(String[] args) {
+        ProcesoNomina programa = new ProcesoNomina();
+        programa.ejecutar();
+    }
+    
+    public void ejecutar() {
+        inicializar();
+        procesarNomina();
+        finalizar();
+    }
+    
+    private void inicializar() {
+        totalEmpleados = 0;
+    }
+    
+    private void procesarNomina() {
+        // Lógica principal
+    }
+    
+    private void finalizar() {
+        System.out.println("Proceso completado. Total: " + totalEmpleados);
+    }
+}
+\end{lstlisting}
+
+\section{Estructuras de Control}
+
+\subsection{IF-ELSE}
+
+\begin{lstlisting}
+// JAVA
+public class ControlIf {
+    public static void main(String[] args) {
+        int saldo = 1500;
+        String categoria;
+        
+        // IF anidado (similar a COBOL)
+        if (saldo > 10000) {
+            categoria = "PREMIUM";
+        } else if (saldo > 5000) {
+            categoria = "GOLD";
+        } else if (saldo > 1000) {
+            categoria = "SILVER";
+        } else {
+            categoria = "BASIC";
+        }
+        
+        // Operador ternario (EVALUATE TRUE también disponible)
+        categoria = saldo > 10000 ? "PREMIUM" : 
+                   saldo > 5000 ? "GOLD" : 
+                   saldo > 1000 ? "SILVER" : "BASIC";
+    }
+}
+
+// COBOL equivalente:
+// IF SALDO > 10000
+//     MOVE 'PREMIUM' TO CATEGORIA
+// ELSE IF SALDO > 5000
+//     MOVE 'GOLD' TO CATEGORIA
+// ELSE IF SALDO > 1000
+//     MOVE 'SILVER' TO CATEGORIA
+// ELSE
+//     MOVE 'BASIC' TO CATEGORIA
+// END-IF
+\end{lstlisting}
+
+\subsection{Bucles (PERFORM equivalente)}
+
+\begin{lstlisting}
+// JAVA - Diferentes tipos de bucles
+public class BuclesEjemplo {
+    public static void main(String[] args) {
+        // Bucle FOR (PERFORM VARYING)
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Línea " + i);
+        }
+        
+        // Bucle WHILE (PERFORM UNTIL)
+        int contador = 0;
+        while (contador < 10) {
+            System.out.println("Contador: " + contador);
+            contador++;
+        }
+        
+        // Bucle DO-WHILE (PERFORM WITH TEST AFTER)
+        int j = 0;
+        do {
+            System.out.println("Ejecuta al menos una vez: " + j);
+            j++;
+        } while (j < 5);
+        
+        // For-each (para recorrer tablas/colecciones)
+        int[] numeros = {1, 2, 3, 4, 5};
+        for (int numero : numeros) {
+            System.out.println("Número: " + numero);
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{SWITCH (EVALUATE)}
+
+\begin{lstlisting}
+// JAVA - Switch moderno (Java 14+)
+public class SwitchEjemplo {
+    public static void main(String[] args) {
+        String codigoDepartamento = "IT";
+        
+        // Switch expression (nuevo)
+        double bono = switch (codigoDepartamento) {
+            case "IT", "VENTAS" -> 1500.0;
+            case "RRHH" -> 1000.0;
+            case "CONTABILIDAD" -> 800.0;
+            default -> 500.0;
+        };
+        
+        // Switch tradicional
+        switch (codigoDepartamento) {
+            case "IT":
+            case "VENTAS":
+                bono = 1500.0;
+                break;
+            case "RRHH":
+                bono = 1000.0;
+                break;
+            default:
+                bono = 500.0;
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Programación Orientada a Objetos}
+
+\subsection{Clases y Objetos (equivalente a estructuras COBOL)}
+
+\begin{lstlisting}
+// JAVA - Clase Empleado
+public class Empleado {
+    // Atributos (similar a nivel 01 en WORKING-STORAGE)
+    private int numeroEmpleado;           // PIC 9(6)
+    private String nombre;                // PIC X(50)
+    private String departamento;          // PIC X(30)
+    private double salario;               // PIC 9(7)V99
+    private boolean activo;               // 88 nivel
+    
+    // Constructor (inicialización)
+    public Empleado(int numeroEmpleado, String nombre, String departamento, double salario) {
+        this.numeroEmpleado = numeroEmpleado;
+        this.nombre = nombre;
+        this.departamento = departamento;
+        this.salario = salario;
+        this.activo = true;
+    }
+    
+    // Getters y Setters (similar a métodos de acceso)
+    public int getNumeroEmpleado() {
+        return numeroEmpleado;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public double getSalario() {
+        return salario;
+    }
+    
+    public void setSalario(double salario) {
+        if (salario > 0) {
+            this.salario = salario;
+        }
+    }
+    
+    // Método de negocio
+    public double calcularBonoAnual() {
+        return salario * 0.10; // 10% de bono
+    }
+    
+    public void aumentarSalario(double porcentaje) {
+        this.salario = this.salario * (1 + porcentaje / 100);
+    }
+    
+    @Override
+    public String toString() {
+        return String.format("Empleado #%d: %s, Depto: %s, Salario: $%,.2f", 
+                           numeroEmpleado, nombre, departamento, salario);
+    }
+}
+
+// Uso de la clase
+public class ProcesoEmpleados {
+    public static void main(String[] args) {
+        // Crear objeto (similar a instanciar una estructura)
+        Empleado emp1 = new Empleado(1001, "Carlos López", "IT", 75000.0);
+        
+        // Usar métodos
+        System.out.println(emp1);
+        emp1.aumentarSalario(5);
+        System.out.println("Nuevo salario: $" + emp1.getSalario());
+        System.out.println("Bono anual: $" + emp1.calcularBonoAnual());
+    }
+}
+\end{lstlisting}
+
+\subsection{Herencia (similar a COPY con modificación)}
+
+\begin{lstlisting}
+// JAVA - Herencia
+public class EmpleadoPorHoras extends Empleado {
+    private double horasTrabajadas;
+    private double tarifaPorHora;
+    
+    public EmpleadoPorHoras(int numeroEmpleado, String nombre, String departamento, 
+                          double tarifaPorHora) {
+        super(numeroEmpleado, nombre, departamento, 0); // Llama al constructor padre
+        this.tarifaPorHora = tarifaPorHora;
+        this.horasTrabajadas = 0;
+    }
+    
+    public void registrarHoras(double horas) {
+        this.horasTrabajadas += horas;
+    }
+    
+    @Override
+    public double getSalario() {
+        return horasTrabajadas * tarifaPorHora;
+    }
+    
+    @Override
+    public double calcularBonoAnual() {
+        // Bono diferente para empleados por horas
+        return getSalario() * 0.05;
+    }
+}
+\end{lstlisting}
+
+\subsection{Interfaces (similar a contratos/programas separados)}
+
+\begin{lstlisting}
+// JAVA - Interface
+public interface Calculable {
+    double calcularPago();
+    boolean esElegibleParaBono();
+}
+
+// Implementación
+public class Contratista implements Calculable {
+    private String id;
+    private double tarifaHora;
+    private double horasTrabajadas;
+    
+    public Contratista(String id, double tarifaHora) {
+        this.id = id;
+        this.tarifaHora = tarifaHora;
+        this.horasTrabajadas = 0;
+    }
+    
+    @Override
+    public double calcularPago() {
+        return horasTrabajadas * tarifaHora;
+    }
+    
+    @Override
+    public boolean esElegibleParaBono() {
+        return horasTrabajadas > 160; // Más de 40 horas/semana promedio
+    }
+}
+\end{lstlisting}
+
+\section{Colecciones vs Tablas COBOL}
+
+\subsection{Arrays Tradicionales}
+
+\begin{lstlisting}
+// JAVA - Arrays (similar a OCCURS)
+public class ArraysEjemplo {
+    public static void main(String[] args) {
+        // Array de enteros
+        int[] ventasDiarias = new int[31];           // 01 VENTAS-DIARIAS OCCURS 31 TIMES PIC 9(7)
+        
+        // Inicialización
+        for (int i = 0; i < ventasDiarias.length; i++) {
+            ventasDiarias[i] = 0;
+        }
+        
+        // Array de cadenas
+        String[] nombresMeses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                                "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+        
+        // Array bidimensional (tabla de dos dimensiones)
+        double[][] ventasPorRegionMes = new double[4][12]; // 4 regiones, 12 meses
+        
+        // Llenar datos
+        ventasPorRegionMes[0][0] = 15000.50; // Región 1, Enero
+    }
+}
+\end{lstlisting}
+
+\subsection{ArrayList (tabla dinámica)}
+
+\begin{lstlisting}
+// JAVA - ArrayList (tabla que crece dinámicamente)
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListEjemplo {
+    public static void main(String[] args) {
+        // Crear lista de empleados (similar a tabla OCCURS DEPENDING ON)
+        List<Empleado> listaEmpleados = new ArrayList<>();
+        
+        // Agregar elementos (no necesitas contador)
+        listaEmpleados.add(new Empleado(1001, "Ana García", "IT", 80000));
+        listaEmpleados.add(new Empleado(1002, "Luis Martínez", "VENTAS", 75000));
+        listaEmpleados.add(new Empleado(1003, "María Rodríguez", "RRHH", 65000));
+        
+        // Recorrer lista (similar a PERFORM VARYING)
+        for (Empleado emp : listaEmpleados) {
+            System.out.println(emp);
+        }
+        
+        // Buscar por índice
+        Empleado segundo = listaEmpleados.get(1);
+        
+        // Tamaño de la lista
+        int totalEmpleados = listaEmpleados.size();
+        
+        // Eliminar elemento
+        listaEmpleados.remove(0); // Elimina el primero
+        
+        // Buscar elemento
+        boolean existe = listaEmpleados.contains(segundo);
+    }
+}
+\end{lstlisting}
+
+\subsection{Map (tabla con clave)}
+
+\begin{lstlisting}
+// JAVA - Map (tabla indexada por clave)
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapEjemplo {
+    public static void main(String[] args) {
+        // Mapa de códigos de departamento a nombres
+        Map<String, String> departamentos = new HashMap<>();
+        
+        // Agregar elementos (similar a tabla con clave)
+        departamentos.put("IT", "Tecnología");
+        departamentos.put("VENTAS", "Ventas y Marketing");
+        departamentos.put("RRHH", "Recursos Humanos");
+        departamentos.put("CONTAB", "Contabilidad");
+        
+        // Buscar por clave
+        String nombreDepto = departamentos.get("IT"); // Retorna "Tecnología"
+        
+        // Verificar si existe clave
+        if (departamentos.containsKey("VENTAS")) {
+            System.out.println("Departamento encontrado");
+        }
+        
+        // Recorrer todos los elementos
+        for (Map.Entry<String, String> entry : departamentos.entrySet()) {
+            System.out.println("Código: " + entry.getKey() + 
+                             ", Nombre: " + entry.getValue());
+        }
+        
+        // Mapa con objetos complejos
+        Map<Integer, Empleado> empleadosPorNumero = new HashMap<>();
+        empleadosPorNumero.put(1001, new Empleado(1001, "Juan", "IT", 70000));
+    }
+}
+\end{lstlisting}
+
+\section{Manejo de Ficheros}
+
+\subsection{Lectura de Archivos de Texto}
+
+\begin{lstlisting}
+// JAVA - Lectura de archivos (similar a READ)
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
+public class LecturaArchivos {
+    public static void main(String[] args) {
+        // Método 1: BufferedReader tradicional
+        try (BufferedReader br = new BufferedReader(new FileReader("empleados.txt"))) {
+            String linea;
+            
+            while ((linea = br.readLine()) != null) { // Similar a READ...AT END
+                procesarLinea(linea);
+            }
+            
+        } catch (IOException e) {
+            System.err.println("Error leyendo archivo: " + e.getMessage());
+        }
+        
+        // Método 2: Java NIO (más moderno)
+        try {
+            List<String> lineas = Files.readAllLines(Paths.get("empleados.txt"));
+            
+            for (String linea : lineas) {
+                procesarLinea(linea);
+            }
+            
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+    
+    private static void procesarLinea(String linea) {
+        // Dividir línea por campos (similar a UNSTRING)
+        String[] campos = linea.split(",");
+        
+        if (campos.length >= 4) {
+            int numero = Integer.parseInt(campos[0].trim());
+            String nombre = campos[1].trim();
+            String depto = campos[2].trim();
+            double salario = Double.parseDouble(campos[3].trim());
+            
+            Empleado emp = new Empleado(numero, nombre, depto, salario);
+            System.out.println("Procesado: " + emp);
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{Escritura de Archivos}
+
+\begin{lstlisting}
+// JAVA - Escritura de archivos (similar a WRITE)
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
+public class EscrituraArchivos {
+    public static void main(String[] args) {
+        List<Empleado> empleados = List.of(
+            new Empleado(1001, "Ana García", "IT", 80000),
+            new Empleado(1002, "Luis Martínez", "VENTAS", 75000),
+            new Empleado(1003, "María Rodríguez", "RRHH", 65000)
+        );
+        
+        // Método 1: BufferedWriter
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("salida.txt"))) {
+            for (Empleado emp : empleados) {
+                String linea = String.format("%d,%s,%s,%.2f", 
+                    emp.getNumeroEmpleado(), emp.getNombre(), 
+                    emp.getDepartamento(), emp.getSalario());
+                bw.write(linea);
+                bw.newLine(); // Salto de línea
+            }
+            
+        } catch (IOException e) {
+            System.err.println("Error escribiendo: " + e.getMessage());
+        }
+        
+        // Método 2: Java NIO
+        try {
+            StringBuilder contenido = new StringBuilder();
+            for (Empleado emp : empleados) {
+                contenido.append(String.format("%d,%s,%s,%.2f%n", 
+                    emp.getNumeroEmpleado(), emp.getNombre(), 
+                    emp.getDepartamento(), emp.getSalario()));
+            }
+            Files.write(Paths.get("salida_nio.txt"), contenido.toString().getBytes());
+            
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{Archivos con Formato (CSV)}
+
+\begin{lstlisting}
+// JAVA - Manejo de CSV (muy común en sistemas mainframe)
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class ManejoCSV {
+    public static void main(String[] args) {
+        // Leer archivo CSV
+        try (CSVReader reader = new CSVReader(new FileReader("empleados.csv"))) {
+            String[] nextLine;
+            
+            while ((nextLine = reader.readNext()) != null) {
+                // nextLine[] es un array con los campos
+                System.out.println("Empleado: " + nextLine[1] + 
+                                 ", Departamento: " + nextLine[2]);
+            }
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        // Escribir archivo CSV
+        try (CSVWriter writer = new CSVWriter(new FileWriter("nuevo.csv"))) {
+            // Crear encabezados
+            String[] encabezados = {"Numero", "Nombre", "Departamento", "Salario"};
+            writer.writeNext(encabezados);
+            
+            // Agregar datos
+            String[] datos1 = {"1001", "Ana García", "IT", "80000.00"};
+            String[] datos2 = {"1002", "Luis Martínez", "VENTAS", "75000.00"};
+            
+            writer.writeNext(datos1);
+            writer.writeNext(datos2);
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Excepciones}
+
+\subsection{Manejo de Errores (similar a FILE STATUS)}
+
+\begin{lstlisting}
+// JAVA - Manejo de excepciones
+public class ManejoExcepciones {
+    public static void main(String[] args) {
+        // TRY-CATCH (similar a evaluar FILE STATUS)
+        try {
+            int resultado = dividir(10, 0);
+            System.out.println("Resultado: " + resultado);
+            
+        } catch (ArithmeticException e) {
+            // División por cero
+            System.err.println("Error: División por cero");
+            
+        } catch (Exception e) {
+            // Cualquier otro error
+            System.err.println("Error general: " + e.getMessage());
+            
+        } finally {
+            // Siempre se ejecuta (similar a código después de error)
+            System.out.println("Operación finalizada");
+        }
+        
+        // Múltiples excepciones
+        try {
+            procesarArchivo("datos.txt");
+            
+        } catch (IOException e) {
+            System.err.println("Error de archivo: " + e.getMessage());
+            
+        } catch (NumberFormatException e) {
+            System.err.println("Error en formato numérico");
+            
+        } catch (Exception e) {
+            System.err.println("Error inesperado: " + e.getMessage());
+        }
+    }
+    
+    public static int dividir(int a, int b) throws ArithmeticException {
+        if (b == 0) {
+            throw new ArithmeticException("Divisor no puede ser cero");
+        }
+        return a / b;
+    }
+    
+    public static void procesarArchivo(String nombreArchivo) 
+            throws IOException, NumberFormatException {
+        // Procesamiento que puede fallar
+    }
+    
+    // Crear excepción personalizada
+    public static class SalarioInvalidoException extends Exception {
+        public SalarioInvalidoException(String mensaje) {
+            super(mensaje);
+        }
+    }
+    
+    public static void validarSalario(double salario) 
+            throws SalarioInvalidoException {
+        if (salario < 0) {
+            throw new SalarioInvalidoException("Salario no puede ser negativo");
+        }
+        if (salario > 1000000) {
+            throw new SalarioInvalidoException("Salario excede límite permitido");
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Programación Funcional}
+
+\subsection{Streams (nuevo concepto para COBOL)}
+
+\begin{lstlisting}
+// JAVA - Streams (procesamiento de colecciones)
+import java.util.*;
+import java.util.stream.*;
+
+public class ProgramacionFuncional {
+    public static void main(String[] args) {
+        List<Empleado> empleados = Arrays.asList(
+            new Empleado(1001, "Ana García", "IT", 80000),
+            new Empleado(1002, "Luis Martínez", "VENTAS", 75000),
+            new Empleado(1003, "María Rodríguez", "IT", 95000),
+            new Empleado(1004, "Carlos López", "VENTAS", 70000),
+            new Empleado(1005, "Sofía Hernández", "RRHH", 65000)
+        );
+        
+        // Filtrar empleados de IT (similar a IF dentro de PERFORM)
+        List<Empleado> empleadosIT = empleados.stream()
+            .filter(emp -> emp.getDepartamento().equals("IT"))
+            .collect(Collectors.toList());
+        
+        // Obtener solo nombres (similar a MOVE de campo específico)
+        List<String> nombres = empleados.stream()
+            .map(Empleado::getNombre)
+            .collect(Collectors.toList());
+        
+        // Calcular salario promedio
+        double promedioSalario = empleados.stream()
+            .mapToDouble(Empleado::getSalario)
+            .average()
+            .orElse(0.0);
+        
+        // Agrupar por departamento (similar a SORT + REPORT)
+        Map<String, List<Empleado>> porDepartamento = empleados.stream()
+            .collect(Collectors.groupingBy(Empleado::getDepartamento));
+        
+        // Encontrar empleado con mayor salario
+        Empleado maxSalario = empleados.stream()
+            .max(Comparator.comparingDouble(Empleado::getSalario))
+            .orElse(null);
+        
+        // Sumar salarios por departamento
+        Map<String, Double> totalPorDepto = empleados.stream()
+            .collect(Collectors.groupingBy(
+                Empleado::getDepartamento,
+                Collectors.summingDouble(Empleado::getSalario)
+            ));
+        
+        // Procesamiento paralelo (aprovecha múltiples CPUs)
+        double sumaParalela = empleados.parallelStream()
+            .mapToDouble(Empleado::getSalario)
+            .sum();
+    }
+}
+\end{lstlisting}
+
+\subsection{Optional (manejo de valores nulos)}
+
+\begin{lstlisting}
+// JAVA - Optional (evita null pointer exceptions)
+import java.util.Optional;
+
+public class OptionalEjemplo {
+    public static void main(String[] args) {
+        // En lugar de retornar null
+        public static Optional<Empleado> buscarEmpleado(int numero) {
+            // Búsqueda en base de datos o lista
+            Empleado encontrado = buscarEnBaseDatos(numero);
+            return Optional.ofNullable(encontrado);
+        }
+        
+        // Uso del Optional
+        Optional<Empleado> resultado = buscarEmpleado(1001);
+        
+        // Manejo seguro
+        if (resultado.isPresent()) {
+            Empleado emp = resultado.get();
+            System.out.println("Encontrado: " + emp.getNombre());
+        } else {
+            System.out.println("Empleado no encontrado");
+        }
+        
+        // O con valor por defecto
+        Empleado emp = resultado.orElse(new Empleado(0, "No encontrado", "", 0));
+        
+        // O lanzar excepción
+        Empleado emp2 = resultado.orElseThrow(() -> 
+            new RuntimeException("Empleado no existe"));
+    }
+}
+\end{lstlisting}
+
+\section{Buenas Prácticas}
+
+\subsection{Convenciones de Nomenclatura}
+
+\begin{lstlisting}
+// JAVA - Convenciones (muy importantes)
+
+// Clases: PascalCase
+public class ProcesadorNomina {
+}
+
+// Interfaces: PascalCase (adjetivo o nombre)
+public interface Calculable {
+}
+
+// Variables y métodos: camelCase
+private int totalEmpleados;
+public void calcularSalario() {
+}
+
+// Constantes: MAYÚSCULAS con guión bajo
+private static final double TASA_IMPUESTO_SOCIAL = 0.21;
+
+// Paquetes: minúsculas, dominio inverso
+package com.empresa.sistema.nomina;
+
+// Evitar abreviaturas
+// MAL: EmpDTO, calcSueldo()
+// BIEN: EmpleadoDTO, calcularSueldo()
+\end{lstlisting}
+
+\subsection{Principios SOLID}
+
+\begin{lstlisting}
+// JAVA - Ejemplo de Single Responsibility Principle
+// MAL: Una clase que hace todo
+public class EmpleadoMalDiseñado {
+    private String nombre;
+    private double salario;
+    
+    public void calcularSalario() { /* ... */ }
+    public void guardarEnBaseDatos() { /* ... */ }
+    public void enviarEmail() { /* ... */ }
+    public void generarReporte() { /* ... */ }
+}
+
+// BIEN: Separar responsabilidades
+public class Empleado {
+    private String nombre;
+    private double salario;
+    
+    // Solo datos y lógica de negocio
+    public double calcularSalario() { /* ... */ }
+}
+
+public class EmpleadoRepository {
+    public void guardar(Empleado empleado) { /* ... */ }
+    public Empleado buscar(int id) { /* ... */ }
+}
+
+public class EmailService {
+    public void enviarEmail(Empleado empleado, String mensaje) { /* ... */ }
+}
+
+public class ReporteService {
+    public void generarReporteEmpleados(List<Empleado> empleados) { /* ... */ }
+}
+\end{lstlisting}
+
+\subsection{Documentación y Comentarios}
+
+\begin{lstlisting}
+// JAVA - Documentación apropiada
+
+/**
+ * Clase que representa un empleado de la empresa.
+ * 
+ * @author Juan Pérez
+ * @version 1.0
+ * @since 2024-01-15
+ */
+public class Empleado {
+    /**
+     * Número único de empleado asignado por el sistema.
+     * Debe ser un valor positivo mayor a cero.
+     */
+    private int numeroEmpleado;
+    
+    /**
+     * Calcula el bono anual basado en el salario y antigüedad.
+     * 
+     * @param antiguedad Años de servicio del empleado
+     * @return El monto del bono anual
+     * @throws IllegalArgumentException si antiguedad es negativa
+     */
+    public double calcularBonoAnual(int antiguedad) {
+        if (antiguedad < 0) {
+            throw new IllegalArgumentException("Antigüedad no puede ser negativa");
+        }
+        
+        double porcentaje = 0.10 + (antiguedad * 0.01);
+        return salario * porcentaje;
+    }
+}
+\end{lstlisting}
+
+\subsection{Logging (en lugar de DISPLAY)}
+
+\begin{lstlisting}
+// JAVA - Logging profesional
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ServicioNomina {
+    private static final Logger logger = LoggerFactory.getLogger(ServicioNomina.class);
+    
+    public void procesarNomina() {
+        logger.info("Iniciando procesamiento de nómina");
+        
+        try {
+            List<Empleado> empleados = cargarEmpleados();
+            logger.debug("Cargados {} empleados", empleados.size());
+            
+            for (Empleado emp : empleados) {
+                procesarEmpleado(emp);
+            }
+            
+            logger.info("Nómina procesada exitosamente");
+            
+        } catch (Exception e) {
+            logger.error("Error procesando nómina", e);
+            throw new RuntimeException("Falló procesamiento de nómina", e);
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Proyecto Práctico Integrador}
+
+\subsection{Sistema de Gestión de Empleados}
+
+\begin{lstlisting}
+// Proyecto completo que integra todos los conceptos
+
+// 1. Modelo de datos
+package com.empresa.modelo;
+
+import java.time.LocalDate;
+import java.util.Objects;
+
+public class Empleado {
+    private int numeroEmpleado;
+    private String nombre;
+    private String departamento;
+    private double salario;
+    private LocalDate fechaContratacion;
+    private String puesto;
+    private boolean activo;
+    
+    public Empleado(int numeroEmpleado, String nombre, String departamento, 
+                   double salario, LocalDate fechaContratacion, String puesto) {
+        this.numeroEmpleado = numeroEmpleado;
+        this.nombre = Objects.requireNonNull(nombre, "Nombre no puede ser nulo");
+        this.departamento = Objects.requireNonNull(departamento, "Departamento no puede ser nulo");
+        this.salario = validarSalario(salario);
+        this.fechaContratacion = Objects.requireNonNull(fechaContratacion, "Fecha no puede ser nula");
+        this.puesto = Objects.requireNonNull(puesto, "Puesto no puede ser nulo");
+        this.activo = true;
+    }
+    
+    private double validarSalario(double salario) {
+        if (salario <= 0) {
+            throw new IllegalArgumentException("Salario debe ser positivo");
+        }
+        if (salario > 1000000) {
+            throw new IllegalArgumentException("Salario excede límite permitido");
+        }
+        return salario;
+    }
+    
+    // Getters y setters con validación
+    public int getNumeroEmpleado() { return numeroEmpleado; }
+    public String getNombre() { return nombre; }
+    public String getDepartamento() { return departamento; }
+    public double getSalario() { return salario; }
+    public LocalDate getFechaContratacion() { return fechaContratacion; }
+    public String getPuesto() { return puesto; }
+    public boolean isActivo() { return activo; }
+    
+    public void setSalario(double salario) {
+        this.salario = validarSalario(salario);
+    }
+    
+    public void desactivar() {
+        this.activo = false;
+    }
+    
+    public int getAntiguedad() {
+        return LocalDate.now().getYear() - fechaContratacion.getYear();
+    }
+    
+    public double calcularBono() {
+        int antiguedad = getAntiguedad();
+        double porcentaje = 0.10 + (antiguedad * 0.02);
+        return salario * Math.min(porcentaje, 0.25); // Máximo 25%
+    }
+    
+    @Override
+    public String toString() {
+        return String.format("Empleado #%d: %s, %s, %s, Salario: $%,.2f, Antigüedad: %d años",
+                           numeroEmpleado, nombre, puesto, departamento, salario, getAntiguedad());
+    }
+    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Empleado empleado = (Empleado) o;
+        return numeroEmpleado == empleado.numeroEmpleado;
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(numeroEmpleado);
+    }
+}
+\end{lstlisting}
+
+\subsection{Instrucciones para Ejecutar el Proyecto}
+
+\begin{enumerate}
+  \item \textbf{Crear estructura de carpetas:}
+\begin{verbatim}
+proyecto-empleados/
+├── src/
+│   └── com/
+│       └── empresa/
+│           ├── modelo/
+│           ├── repositorio/
+│           ├── servicio/
+│           └── ui/
+├── lib/ (para archivos .jar externos)
+└── empleados.csv (se creará automáticamente)
+\end{verbatim}
+
+  \item \textbf{Dependencias necesarias (Maven):}
+\begin{verbatim}
+<dependencies>
+    <!-- Para manejo de CSV -->
+    <dependency>
+        <groupId>com.opencsv</groupId>
+        <artifactId>opencsv</artifactId>
+        <version>5.7.1</version>
+    </dependency>
+    
+    <!-- Para logging -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>2.0.7</version>
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.4.8</version>
+    </dependency>
+</dependencies>
+\end{verbatim}
+
+  \item \textbf{Compilar y ejecutar:}
+\begin{verbatim}
+# Compilar
+javac -cp lib/* src/com/empresa/*/*.java
+
+# Ejecutar
+java -cp src:lib/* com.empresa.ui.EmpleadoConsolaUI
+\end{verbatim}
+\end{enumerate}
+
+\section{Resumen de Transición COBOL $\rightarrow$ Java}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Concepto COBOL} & \textbf{Equivalente Java} & \textbf{Notas} \\
+\hline
+DIVISION/SECTION & Paquetes/Clases & Organización modular \\
+WORKING-STORAGE & Atributos/Variables & Con visibilidad controlada \\
+OCCURS & Arrays/ArrayList & Colecciones más flexibles \\
+PERFORM & Métodos & Reutilización de código \\
+IF/EVALUATE & if/switch & Más expresivo \\
+READ/WRITE & Streams/Files & Manejo moderno de archivos \\
+COPY & Herencia/Import & Reutilización de código \\
+FILE STATUS & Excepciones & Manejo robusto de errores \\
+DISPLAY & System.out/loggers & Logging profesional \\
+PROGRAM-ID & public class & Punto de entrada \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Próximos Pasos}
+
+\begin{enumerate}
+  \item \textbf{Aprender frameworks Java:}
+  \begin{itemize}
+    \item Spring Boot (para aplicaciones web)
+    \item Hibernate (para base de datos)
+    \item JUnit (para pruebas)
+  \end{itemize}
+
+  \item \textbf{Conceptos avanzados:}
+  \begin{itemize}
+    \item Concurrencia y hilos
+    \item Programación reactiva
+    \item Microservicios
+  \end{itemize}
+
+  \item \textbf{Herramientas esenciales:}
+  \begin{itemize}
+    \item Maven/Gradle (gestión de dependencias)
+    \item Git (control de versiones)
+    \item IDE (IntelliJ IDEA o Eclipse)
+  \end{itemize}
+
+  \item \textbf{Certificaciones:}
+  \begin{itemize}
+    \item Oracle Certified Java Programmer
+    \item Spring Professional Certification
+  \end{itemize}
+\end{enumerate}
+
+\vspace{1cm}
+\begin{center}
+\textit{Esta guía proporciona una base sólida para tu transición de COBOL a Java. ¡Éxito en tu aprendizaje!}
+\end{center}
+
+\end{document}

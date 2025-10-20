@@ -1,0 +1,168 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\geometry{margin=2.5cm}
+
+\title{Estadística descriptiva del PIB per cápita\\Explicación paso a paso}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Datos originales (30 países)}
+\[
+\begin{array}{rrrrrr}
+\hline
+\text{País 01} & 5\,480.00 & \text{País 11} & 105\,956.00 & \text{País 21} & 101\,168.00 \\
+\text{País 02} & 2\,566.00 & \text{País 12} & 20\,981.00 & \text{País 22} & 12\,068.00 \\
+\text{País 03} & 6\,035.00 & \text{País 13} & 4\,187.00 & \text{País 23} & 8\,873.00 \\
+\text{País 04} & 135\,827.00 & \text{País 14} & 18\,596.00 & \text{País 24} & 69\,470.00 \\
+\text{País 05} & 41\,684.00 & \text{País 15} & 13\,494.00 & \text{País 25} & 10\,961.00 \\
+\text{País 06} & 4\,802.00 & \text{País 16} & 25\,226.00 & \text{País 26} & 12\,701.00 \\
+\text{País 07} & 28\,463.00 & \text{País 17} & 36\,368.00 & \text{País 27} & 28\,535.00 \\
+\text{País 08} & 18\,246.00 & \text{País 18} & 36\,134.00 & \text{País 28} & 2\,708.00 \\
+\text{País 09} & 2\,861.00 & \text{País 19} & 21\,863.00 & \text{País 29} & 25\,796.00 \\
+\text{País 10} & 87\,638.00 & \text{País 20} & 6\,035.00 & \text{País 30} & 25\,295.00 \\
+\hline
+\end{array}
+\]
+
+\section*{Datos ordenados de menor a mayor (con país)}
+\[
+\begin{array}{clclcl}
+\hline
+1 & \text{País 02} & 2\,566.00 \\
+2 & \text{País 28} & 2\,708.00 \\
+3 & \text{País 09} & 2\,861.00 \\
+4 & \text{País 13} & 4\,187.00 \\
+5 & \text{País 06} & 4\,802.00 \\
+6 & \text{País 01} & 5\,480.00 \\
+7 & \text{País 03} & 6\,035.00 \\
+8 & \text{País 20} & 6\,035.00 \\
+9 & \text{País 23} & 8\,873.00 \\
+10 & \text{País 25} & 10\,961.00 \\
+11 & \text{País 22} & 12\,068.00 \\
+12 & \text{País 26} & 12\,701.00 \\
+13 & \text{País 15} & 13\,494.00 \\
+14 & \text{País 08} & 18\,246.00 \\
+15 & \text{País 14} & 18\,596.00 \\
+16 & \text{País 12} & 20\,981.00 \\
+17 & \text{País 19} & 21\,863.00 \\
+18 & \text{País 30} & 25\,295.00 \\
+19 & \text{País 16} & 25\,226.00 \\
+20 & \text{País 29} & 25\,796.00 \\
+21 & \text{País 07} & 28\,463.00 \\
+22 & \text{País 27} & 28\,535.00 \\
+23 & \text{País 18} & 36\,134.00 \\
+24 & \text{País 17} & 36\,368.00 \\
+25 & \text{País 05} & 41\,684.00 \\
+26 & \text{País 24} & 69\,470.00 \\
+27 & \text{País 10} & 87\,638.00 \\
+28 & \text{País 21} & 101\,168.00 \\
+29 & \text{País 11} & 105\,956.00 \\
+30 & \text{País 04} & 135\,827.00 \\
+\hline
+\end{array}
+\]
+
+\section*{1. Rango}
+El \textbf{rango} mide la dispersión total como la diferencia entre el valor máximo y mínimo de la serie.\\
+Fórmula:
+\[
+\text{Rango} = x_{\max} - x_{\min}
+\]
+Sustituyendo:
+\[
+\text{Rango} = 135\,827 - 2\,566 = \boxed{133\,261.00}
+\]
+
+\section*{2. Número de intervalos (Regla de Sturges)}
+Para agrupar datos continuos se usa la regla de Sturges, que estima el número óptimo de clases $k$ a partir del tamaño muestral $n$:
+\[
+k = 1 + 3.322 \cdot \log_{10}(n)
+\]
+Con $n = 30$:
+\[
+k = 1 + 3.322 \cdot \log_{10}(30) = 1 + 3.322 \cdot 1.4771 \approx 5.907 \Rightarrow \boxed{6 \text{ intervalos}}
+\]
+
+\section*{3. Amplitud del intervalo}
+Una vez fijado $k$, la amplitud $i$ se reparte uniformemente:
+\[
+i = \frac{\text{Rango}}{k} = \frac{133\,261}{6} = 22\,210.166\ldots \Rightarrow \boxed{22\,210.17}
+\]
+
+\section*{4. Tabla de frecuencias (agrupada)}
+Con los límites reales, se calcula la marca de clase $x$, las frecuencias $f$, los productos $x\cdot f$ (para la media) y $x^{2}\cdot f$ (para la varianza).
+
+\[
+\begin{array}{cccccc}
+\toprule
+\text{Intervalo (L.R.)} & \text{Marca }x & f & x\cdot f & x^{2}\cdot f \\
+\midrule
+2\,566.00 \text{ -- } 24\,776.17 & 13\,671.09 & 20 & 273\,421.80 & 3\,738\,123\,456 \\
+24\,776.17 \text{ -- } 46\,986.34 & 35\,881.26 & 4 & 143\,525.04 & 5\,152\,000\,000 \\
+46\,986.34 \text{ -- } 69\,196.51 & 58\,091.43 & 1 & 58\,091.43 & 3\,374\,615\,385 \\
+69\,196.51 \text{ -- } 91\,406.68 & 80\,301.60 & 2 & 160\,603.20 & 12\,896\,000\,000 \\
+91\,406.68 \text{ -- } 113\,616.85 & 102\,511.77 & 2 & 205\,023.54 & 21\,016\,000\,000 \\
+113\,616.85 \text{ -- } 135\,827.02 & 124\,721.94 & 1 & 124\,721.94 & 15\,555\,000\,000 \\
+\midrule
+\sum & & 30 & 965\,386.95 & 61\,731\,738\,841 \\
+\bottomrule
+\end{array}
+\]
+
+\section*{5. Media aritmética}
+\subsection*{Datos sin agrupar}
+Se suman todos los valores y se dividen entre $n$:
+\[
+\bar{x} = \frac{\sum x_i}{30} = \frac{830\,341}{30} = \boxed{27\,678.03}
+\]
+
+\subsection*{Datos agrupados}
+Se emplea la marca de clase $x$ y la frecuencia $f$:
+\[
+\bar{x} = \frac{\sum x\cdot f}{N} = \frac{965\,386.95}{30} = \boxed{32\,179.57}
+\]
+
+\section*{6. Moda}
+\subsection*{Datos sin agrupar}
+El valor que más se repite es $6\,035.00$ (aparece 2 veces).
+
+\subsection*{Datos agrupados (fórmula de Czuber)}
+Se localiza el intervalo modal (mayor frecuencia, 20 datos) y se interpola:
+\[
+M_o = L + \left(\frac{d_1}{d_1+d_2}\right)\cdot a = 2\,566 + \left(\frac{20}{20+16}\right)\cdot 22\,210.17 = \boxed{14\,905.00}
+\]
+
+\section*{7. Mediana (datos sin agrupar)}
+Con $n = 30$ (par) se promedian los valores de las posiciones $15^\circ$ y $16^\circ$ ya ordenados:
+\[
+\tilde{x} = \frac{18\,596 + 20\,981}{2} = \boxed{19\,788.5}
+\]
+
+\section*{8. Segundo cuartil $Q_2$ (agrupado)}
+$Q_2$ coincide con la mediana agrupada. Se busca el intervalo que acumula la mitad de los datos ($N/2 = 15$) y se interpola:
+\[
+Q_2 = L + \left(\frac{N/2 - F}{f}\right)\cdot a = 2\,566 + \left(\frac{15-0}{20}\right)\cdot 22\,210.17 = \boxed{19\,223.63}
+\]
+
+\section*{9. Varianza (agrupada)}
+Se utiliza la fórmula de la varianza poblacional con datos agrupados:
+\[
+s^{2} = \frac{\sum x^{2}f - \frac{(\sum xf)^{2}}{N}}{N}
+= \frac{61\,731\,738\,841 - \frac{(965\,386.95)^{2}}{30}}{30}
+= \boxed{1\,021\,977\,647.70}
+\]
+
+\section*{10. Desviación estándar (agrupada)}
+Es la raíz cuadrada de la varianza:
+\[
+s = \sqrt{1\,021\,977\,647.70} = \boxed{31\,968.38}
+\]
+
+\end{document}

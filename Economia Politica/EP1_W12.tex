@@ -1,0 +1,161 @@
+\documentclass[stu,12pt,floatsintext]{apa7}
+
+
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa} % APA (7.ª con biblatex-apa actual)
+\addbibresource{Bib.bib} % Bibliography file
+
+
+\DefineBibliographyStrings{american}{
+  references = {Referencias},
+}
+
+\usepackage[T1]{fontenc} 
+\usepackage{mathptmx} 
+
+% Title page stuff _____________________
+\title{Semana 12 - Ecuación de los Precios Relativos} % The big, long version of the title for the title page
+% \shorttitle{APA Starter} % The short title for the header
+\author{David Armando Ramirez Navarrete}
+\duedate{02 noviembre 2025}
+% \date{January 17, 2024} The student version doesn't use the \date command, for whatever reason
+\affiliation{Facultad de Economía (UNAM)}
+\course{Economía Política I} % LaTeX gets annoyed (i.e., throws a grumble-error) if this is blank, so I put something here. However, if your instructor will mark you off for this being on the title page, you can leave this entry blank (delete the PSY 4321, but leave the command), and just make peace with the error that will happen. It won't break the document.
+\professor{Gabriela Téllez Arriaga}  % Same situation as for the course info. Some instructors want this, some absolutely don't and will take off points. So do what you gotta.
+
+% \abstract{This is the abstract for this paper, wherein the main points of the introduction, method, results, and discussion are quickly talked about. Probably in more than one sentence, though. Dare I guess, more than two? There is a page break before starting the Introduction.}
+
+%\keywords{APA style, demonstration} % If you need to have keywords for your paper, delete the % at the start of this line
+
+\begin{document}
+
+\maketitle
+
+\section*{Introducción}
+
+El análisis de los precios relativos constituye un pilar fundamental en la teoría económica, especialmente para comprender la asignación de recursos y la distribución del ingreso bajo el capitalismo. Anwar \textcite{Shaikh2016}, al retomar y desarrollar la tradición clásica, argumenta que la comprensión de los precios debe trascender las propiedades algebraicas superficiales, enfocándose en la estructura subyacente del valor y la competencia. En su obra, Shaikh establece un vínculo analítico y empírico entre los precios y los requerimientos de trabajo, diferenciando su enfoque tanto de las abstracciones neoclásicas, que se centran en la productividad marginal y el equilibrio, como de ciertos desarrollos posclásicos que se desviaron hacia una crítica puramente lógica.
+
+El punto de partida de Shaikh es la competencia real, entendida como un proceso turbulento de ajuste continuo donde el precio de mercado fluctúa alrededor del precio de producción regulador. Según el autor, \textit{“los movimientos de los precios están dominados por los cambios en los requerimientos totales de trabajo”} (\cite{Shaikh2016}). A través de su formulación conocida como la Ecuación Fundamental del Precio, Shaikh ofrece una herramienta que no solo explica la estructura de los precios relativos, sino que también sirve como marco comparativo para evaluar las principales teorías del valor y la competencia.
+
+\section*{La Ecuación Fundamental de los Precios Relativos según Shaikh}
+
+\textcite{Shaikh2016} formaliza la relación fundamental de los precios mediante una identidad contable que descompone el precio unitario en sus componentes de costo y ganancia. Esta formulación, aplicable a cualquier tipo de precio, ya sea de mercado, de monopolio o de producción, surge de la descomposición verticalmente integrada del precio, lo que permite rastrear su composición en términos de trabajo y excedente.
+
+En palabras del autor: “Todo precio puede expresarse como una combinación de los costos laborales unitarios integrados y la ganancia unitaria integrada”. De este modo, el precio unitario (\(p\)) de una mercancía se representa como:
+
+\[p = vulc + vm = vulc(1 + \sigma_{PW}) = w \cdot v(1 + \sigma_{PW})\]
+
+Donde \(w\) es el salario promedio, \(v\) el tiempo de trabajo total integrado, y \(\sigma_{PW}\) la relación integrada ganancia-salario.
+
+Esta formulación permite derivar la ecuación de los precios relativos entre dos industrias:
+
+\[ \frac{p_i}{p_j} = \frac{vulc_i}{vulc_j} \cdot \chi_{ij} \]
+
+Donde \(\chi_{ij} = \frac{1 + \sigma_{PW_i}}{1 + \sigma_{PW_j}}\).
+
+\textcite{Shaikh2016} señala que esta relación implica que el precio relativo entre dos mercancías depende de dos factores: los costos laborales unitarios integrados relativos y el término de desviación \( \chi_{ij} \). En su interpretación: “cuando las relaciones ganancia-salario integradas tienden a converger, los precios relativos se aproximan a los tiempos de trabajo relativos”.
+
+Empíricamente, Shaikh demuestra que la integración vertical reduce la dispersión de las tasas integradas de ganancia, actuando como un factor de amortiguación. De este modo, incluso en sectores con diferentes estructuras de capital, la relación entre precios y tiempos de trabajo se mantiene estable (\cite{Shaikh2016}).
+
+\section*{Desarrollos Teóricos en Torno al Precio Relativo: Un Resumen Comparativo}
+
+Shaikh sitúa su análisis en la corriente clásica iniciada por Smith, Ricardo y Marx, contrastando sus hallazgos con las reinterpretaciones \textit{sraffianas} y el enfoque neoclásico.
+
+\begin{enumerate}
+  \item \textbf{Adam Smith y la Producción Simple de Mercancías} \\ Smith fue el primero en distinguir entre la competencia basada en el ingreso y aquella basada en la ganancia. En la producción simple de mercancías —sin capital ni ganancia— los precios son proporcionales a los tiempos de trabajo. Como indica \textcite{Shaikh2016}, Smith concibió un sistema donde “el trabajo es la medida real del valor de cambio”, aunque posteriormente reconoció desviaciones al introducir el capital y la propiedad de la tierra.
+  \item \textbf{Ricardo y la Hipótesis de la Dominancia del Trabajo} \\ Ricardo fue el primero en cuantificar el trabajo total (directo e indirecto) incorporado a las mercancías. Según \textcite{Shaikh2016}, Ricardo “demostró que las desviaciones entre los precios de producción y los valores laborales eran pequeñas y sistemáticas”, llegando a estimarlas en torno al 7\%. Esta precisión empírica prefigura el hallazgo moderno de Shaikh: los precios observados tienden a correlacionarse estrechamente con los requerimientos de trabajo integrados.
+  \item \textbf{Marx y la Ley del Valor} \\ Marx desarrolló el marco clásico introduciendo el concepto de plusvalía como origen de la ganancia. En la lectura de Shaikh, “Marx sostuvo que los precios de producción son transformaciones de los valores, no su negación”. Así, la ley del valor regula los movimientos de los precios, aunque estos se expresen en una forma modificada por la competencia capitalista y la igualación de las tasas de ganancia.
+  \item \textbf{Sraffa y el Enfoque Posclásico} \\ Sraffa reformuló la tradición clásica mostrando cómo los precios de producción varían con la distribución entre salarios y beneficios. Sin embargo, \textcite{Shaikh2016} considera que el enfoque \textit{sraffiano}, aunque elegante, se mantiene en un terreno algebraico y estático, sin incorporar la dinámica de la competencia real. Además, critica que Sraffa “reduce la competencia a un mero equilibrio distributivo”, desconectándola de los procesos empíricos de ajuste y turbulencia.
+  \item \textbf{El Debate \textit{Sraffiano}-Neoclásico} \\ El enfoque neoclásico, centrado en la productividad marginal, fue cuestionado por los \textit{sraffianos} a través del \textit{re-switching} y la reversión del capital. No obstante, \textcite{Shaikh2016} argumenta que “la mayor parte del debate \textit{sraffiano} se perdió en su propia lógica, sin abordar la evidencia empírica de la competencia real”. De hecho, los modelos de capital fijo de Shaikh muestran que las curvas salario-ganancia son casi lineales, lo que confirma la estabilidad empírica del vínculo entre precios y valores.
+\end{enumerate}
+
+\section*{Análisis de las Formulaciones sobre Valor y Competencia}
+
+La tradición clásica, de Smith a Shaikh, se fundamenta en la teoría del valor trabajo. En ella, el valor se entiende como el tiempo de trabajo socialmente necesario, mientras que las ganancias y las desviaciones de los precios se explican por la estructura de la producción y la distribución del excedente.
+
+\textcite{Shaikh2016} adopta este marco y lo refuerza empíricamente, señalando que “las desviaciones sistemáticas entre precios y valores son pequeñas, y los movimientos temporales de los precios están dominados por los cambios en los valores”. De este modo, la Ecuación Fundamental del Precio demuestra que los precios están estructuralmente anclados en los costos laborales integrados, mientras las relaciones ganancia-salario modulan las fluctuaciones intersectoriales.
+
+Frente a la visión neoclásica, que sustituye el valor trabajo por la productividad marginal y presupone competencia perfecta, Shaikh defiende la competencia real, caracterizada por rivalidad, innovación y ajuste turbulento. En esta perspectiva, los capitales más eficientes reducen precios y costos, forzando la igualación de las tasas de ganancia en el nivel agregado (\cite{Shaikh2016}).
+
+\section*{Conclusión}
+
+La teoría de Anwar Shaikh constituye una síntesis entre la formalización rigurosa y la tradición crítica de la economía política clásica. Su Ecuación Fundamental del Precio Relativo restablece el papel determinante del trabajo en la estructura de precios y ofrece un puente entre teoría y evidencia empírica.
+
+Como señala el propio autor: “La teoría clásica del valor trabajo no es una reliquia del pasado, sino una descripción empíricamente verificable del capitalismo contemporáneo” (\cite{Shaikh2016}).
+
+La contribución de Shaikh reside en demostrar que la integración vertical y la competencia real mantienen el vínculo estructural entre precios y valores dentro de los márgenes predichos por Ricardo y Marx. Su enfoque reafirma la vigencia del análisis clásico frente a las abstracciones neoclásicas y las críticas puramente formales, ofreciendo un marco robusto para comprender el capitalismo como un sistema dinámico, conflictivo y regido por leyes objetivas de movimiento.
+
+\printbibliography
+
+\end{document}
+
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Daniel A. Weiss.
+%% 
+%% This work consists of the file  apa7.dtx
+%% and the derived files           apa7.ins,
+%%                                 apa7.cls,
+%%                                 apa7.pdf,
+%%                                 README,
+%%                                 APA7american.txt,
+%%                                 APA7british.txt,
+%%                                 APA7dutch.txt,
+%%                                 APA7english.txt,
+%%                                 APA7german.txt,
+%%                                 APA7ngerman.txt,
+%%                                 APA7greek.txt,
+%%                                 APA7czech.txt,
+%%                                 APA7turkish.txt,
+%%                                 APA7endfloat.cfg,
+%%                                 Figure1.pdf,
+%%                                 shortsample.tex,
+%%                                 longsample.tex, and
+%%                                 bibliography.bib.
+%% 
+%%
+%%
+%% This is file `./samples/shortsample.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% apa7.dtx  (with options: `shortsample')
+%% ----------------------------------------------------------------------
+%% 
+%% apa7 - A LaTeX class for formatting documents in compliance with the
+%% American Psychological Association's Publication Manual, 7th edition
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% ----------------------------------------------------------------------

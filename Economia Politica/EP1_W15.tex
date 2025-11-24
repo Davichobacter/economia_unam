@@ -1,0 +1,181 @@
+\documentclass[stu,12pt,floatsintext]{apa7}
+
+
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa} % APA (7.ª con biblatex-apa actual)
+\addbibresource{Bib.bib} % Bibliography file
+
+
+\DefineBibliographyStrings{american}{
+  references = {Referencias},
+}
+
+\usepackage[T1]{fontenc} 
+\usepackage{mathptmx} 
+
+% Title page stuff _____________________
+\title{Semana 15 - Macroeconomía Moderna} % The big, long version of the title for the title page
+% \shorttitle{APA Starter} % The short title for the header
+\author{David Armando Ramirez Navarrete}
+\duedate{23 noviembre 2025}
+% \date{January 17, 2024} The student version doesn't use the \date command, for whatever reason
+\affiliation{Facultad de Economía (UNAM)}
+\course{Economía Política I} % LaTeX gets annoyed (i.e., throws a grumble-error) if this is blank, so I put something here. However, if your instructor will mark you off for this being on the title page, you can leave this entry blank (delete the PSY 4321, but leave the command), and just make peace with the error that will happen. It won't break the document.
+\professor{Gabriela Téllez Arriaga}  % Same situation as for the course info. Some instructors want this, some absolutely don't and will take off points. So do what you gotta.
+
+% \abstract{This is the abstract for this paper, wherein the main points of the introduction, method, results, and discussion are quickly talked about. Probably in more than one sentence, though. Dare I guess, more than two? There is a page break before starting the Introduction.}
+
+%\keywords{APA style, demonstration} % If you need to have keywords for your paper, delete the % at the start of this line
+
+\begin{document}
+
+\maketitle
+
+\section*{Introducción}
+
+En Capitalismo. Competencia Conflicto Y Crisis, \textcite{Shaikh2016} inicia el capítulo 12 señalando que la macroeconomía moderna surgió sobre un “mundo ficticio idealizado, un verdadero Jardín del Edén” en el cual la escasez no existe y los mercados operan con perfección continua. Este contexto le permite examinar el ascenso de la macroeconomía neowalrasiana, basada en el equilibrio general, y su fracaso para explicar fenómenos reales como la estanflación, la turbulencia macroeconómica y el desempleo persistente.
+
+La relevancia del debate es profunda: mientras la ortodoxia neoclásica persiste en una visión donde los mercados alcanzan equilibrio con ajustes instantáneos, la tradición crítica (Kalecki, Keynes, postkeynesianos) enfatiza la incertidumbre, la competencia real imperfecta y las dinámicas de clase. Shaikh, desde esta perspectiva, denuncia el resurgimiento neowalrasiano como una reconstrucción teórica “internamente elegante pero empíricamente vacía”.
+
+\section*{Las Posturas y Escuelas de la Economía Neowalrasiana}
+
+Shaikh explica que el retorno de la ortodoxia a partir de los años 70 se debió al colapso de la síntesis neoclásica ante la estanflación. Como afirma: “la tarea de analizar el sistema real generalmente comienza desde el marco walrasiano, para luego introducir 'imperfecciones' selectivas” (\cite{Shaikh2016}). Esta estrategia consiste en mantener el ideal del equilibrio perfecto e introducir fricciones \textit{ad hoc} para explicar la realidad.
+
+\subsection{Monetarismo}
+
+Shaikh señala cómo Friedman reconstruyó la Teoría Cuantitativa del Dinero bajo el supuesto de que “la velocidad es estable a corto plazo” y que los agentes pueden ser representados como un único consumidor optimizador (\cite{Shaikh2016}). Esta simplificación elimina toda heterogeneidad estructural.
+
+\subsection{La Tasa Natural de Desempleo}
+
+Friedman y Phelps sostuvieron que el desempleo tiende a su tasa “natural”, independiente de la inflación. Shaikh enfatiza que esta teoría descansa en la idea de “percepciones equivocadas” por parte de trabajadores y empresas. Cuando estas percepciones desaparecen, la economía regresa automáticamente al “pleno empleo”.
+
+\subsection{Expectativas Racionales}
+
+Sobre Lucas, Shaikh escribe que este autor exige “expectativas hiperracionales”, en las cuales los agentes “conocen el modelo verdadero del mundo”. En este marco, las políticas económicas sólo producen efectos si sorprenden a los agentes, reduciendo la política fiscal y monetaria a irrelevancia.
+
+\subsection{Teoría del Ciclo Económico Real (TCR)}
+
+Shaikh describe esta teoría como una construcción basada en “equilibrio continuo en todos los mercados y salarios perfectamente flexibles”. Las fluctuaciones reales se interpretan como respuestas óptimas a choques tecnológicos, y el desempleo se vuelve “voluntario”.
+
+\subsection{Crítica general de Shaikh}
+
+Shaikh sostiene que la macroeconomía neoclásica basa su análisis en un agente representativo y elimina la complejidad agregada: “las acciones agregadas poseen propiedades emergentes que no pueden deducirse de las acciones individuales” (\cite{Shaikh2016}).
+Así, la macroeconomía neoclásica fracasa en capturar fenómenos como crisis, desempleo persistente y distribución funcional del ingreso.
+
+\section*{Aportes de Michał Kalecki y su Contraste con Keynes}
+
+Shaikh destaca a Kalecki como un autor fundamental para comprender la macroeconomía real. En contraste con Keynes, quien, en palabras del propio \textcite{Shaikh2016}, “no desarrolló totalmente una teoría de precios”, Kalecki sí incorpora precios, poder de mercado y clases sociales.
+
+\subsection{Determinación de Precios y Distribución}
+
+Kalecki propone que los precios siguen una regla de mark-up sobre costos primos. Este margen depende del grado de monopolio, lo cual define la participación salarial y la tasa de ganancia. Shaikh resume esto al decir que Kalecki “pasa gradualmente del micro al macro” cuando vincula precios, ingresos y empleo.
+
+\subsection{Ahorro e Inversión}
+
+Kalecki enfatiza que “el ahorro es generado por la inversión”, y no al revés, un punto central del principio de demanda efectiva. Este proceso se produce porque los trabajadores consumen todo su ingreso, mientras que los capitalistas ahorran una parte de sus ganancias.
+
+\subsection{Diferencias con Keynes}
+
+Shaikh muestra cómo Kalecki incorpora explícitamente relaciones de clase, trabajadores y capitalistas, y estructuras de mercado monopolísticas, elementos ausentes en la Teoría General. Keynes prioriza la “eficiencia marginal del capital”, mientras Kalecki se enfoca en la tasa de ganancia como motor de la inversión.
+
+\section*{Las Posturas Postkeynesianas y el Aporte Estructuralista de Kalecki}
+
+Shaikh dedica parte del capítulo a mostrar cómo los postkeynesianos desarrollan el legado de Kalecki. La teoría postkeynesiana rechaza la neutralidad del dinero, asume desempleo persistente y sostiene que el Estado puede alcanzar el pleno empleo sin necesariamente generar inflación acelerada.
+
+\subsection{Poder de Mercado}
+
+El marco kaleckiano/estructuralista sigue la regla de precios con \textit{mark-up}. Esto permite analizar la relación entre inflación, salarios y poder oligopólico.
+
+\subsection{Estructura Productiva y Crecimiento}
+
+Taylor y otros autores emplean el conflicto distributivo entre salarios y ganancias para explicar si una economía es \textit{wage-led} o \textit{profit-led}, siguiendo principios kaleckianos.
+
+\subsection{Capacidad Utilizada}
+
+Shaikh reconoce que la capacidad utilizada “varía porque las firmas ajustan su producción en respuesta a la demanda” (\cite{Shaikh2016}).
+Este enfoque permite entender la inversión como un proceso activo y no como un ajuste pasivo al equilibrio, lo cual coincide con Kalecki.
+
+\section*{Conclusión}
+
+Shaikh demuestra que la macroeconomía neowalrasiana intenta explicar una realidad económica profundamente turbulenta mediante supuestos de equilibrio perpetuo, agentes perfectamente racionales y mercados que se vacían de manera automática. Sin embargo, como expone a lo largo del capítulo, estos modelos resultan incapaces de dar cuenta de fenómenos recurrentes como las crisis, el desempleo persistente y las fluctuaciones estructurales de la actividad económica. Su distancia respecto de la realidad no es una falla menor, sino una consecuencia directa de su compromiso metodológico con una visión idealizada del capitalismo, donde todas las desviaciones observadas deben explicarse mediante “imperfecciones” añadidas \textit{ad hoc}.
+
+En contraste, el enfoque desarrollado por Michał Kalecki ofrece un marco teórico sólido que se articula de manera coherente con los hechos estilizados del capitalismo real. Al integrar la competencia imperfecta, el conflicto distributivo entre clases y una teoría de precios basada en márgenes de ganancia, Kalecki recupera elementos esenciales que la macroeconomía ortodoxa decide ignorar. Su análisis de la inversión como función de las ganancias, y no como mera respuesta pasiva a tasas de interés o expectativas racionales, permite comprender mejor la dinámica del crecimiento y la acumulación en contextos donde la incertidumbre y la rivalidad empresarial son determinantes centrales.
+
+La macroeconomía estructuralista postkeynesiana prolonga este legado kaleckiano al estudiar las interacciones entre distribución, poder de mercado, precios e inversión sin recurrir al ideal del equilibrio walrasiano. En esta tradición, la economía se concibe como un sistema marcado por tensiones y desequilibrios estructurales, donde el desempleo involuntario y la volatilidad son fenómenos explicables a partir de las relaciones sociales e institucionales que organizan la producción.
+
+Por ello, la “caída” de la macroeconomía moderna no es accidental: deriva de su incapacidad para capturar la naturaleza conflictiva, incierta y estructuralmente desigual del capitalismo. Kalecki, en cambio, proporciona una alternativa analítica que dialoga mejor con la evidencia empírica y que permite comprender el funcionamiento del sistema económico desde una perspectiva más realista y crítica. Desde la óptica de Shaikh, esta diferencia metodológica constituye la clave para recuperar una macroeconomía capaz de describir la complejidad del capitalismo contemporáneo sin sacrificar rigor teórico ni relevancia empírica.
+
+\printbibliography
+
+\end{document}
+
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Daniel A. Weiss.
+%% 
+%% This work consists of the file  apa7.dtx
+%% and the derived files           apa7.ins,
+%%                                 apa7.cls,
+%%                                 apa7.pdf,
+%%                                 README,
+%%                                 APA7american.txt,
+%%                                 APA7british.txt,
+%%                                 APA7dutch.txt,
+%%                                 APA7english.txt,
+%%                                 APA7german.txt,
+%%                                 APA7ngerman.txt,
+%%                                 APA7greek.txt,
+%%                                 APA7czech.txt,
+%%                                 APA7turkish.txt,
+%%                                 APA7endfloat.cfg,
+%%                                 Figure1.pdf,
+%%                                 shortsample.tex,
+%%                                 longsample.tex, and
+%%                                 bibliography.bib.
+%% 
+%%
+%%
+%% This is file `./samples/shortsample.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% apa7.dtx  (with options: `shortsample')
+%% ----------------------------------------------------------------------
+%% 
+%% apa7 - A LaTeX class for formatting documents in compliance with the
+%% American Psychological Association's Publication Manual, 7th edition
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% ----------------------------------------------------------------------

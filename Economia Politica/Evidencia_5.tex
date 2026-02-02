@@ -11,12 +11,52 @@
 \usepackage{graphicx}
 \usepackage[section]{placeins} 
 \usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+\usepackage{float} % para [H]
+
+\tikzset{
+  startstop/.style={
+    ellipse,
+    minimum width=3cm,
+    minimum height=1cm,
+    text centered,
+    draw=black,
+    fill=blue!20
+  },
+  process/.style={
+    rectangle,
+    rounded corners,
+    minimum width=4.5cm,
+    minimum height=1cm,
+    text centered,
+    draw=black,
+    fill=gray!15
+  },
+  decision/.style={
+    diamond,
+    aspect=2,
+    minimum width=4cm,
+    minimum height=1cm,
+    text centered,
+    draw=black,
+    fill=orange!25
+  },
+  arrow/.style={
+    thick,
+    ->,
+    >=Stealth,
+    draw=gray!70
+  }
+}
+
+
 
 \geometry{letterpaper, margin=2.5cm}
 \onehalfspacing
 
 % Datos del informe (puedes modificarlos)
-\title{Avance 5 \\ Reporte de Depuración y Evaluación de Componentes de Software}
+\title{Avance 5 \\ Optimización del flujo de trabajo de procesos internos}
 \author{David Armando Ramírez Navarrete}
 \date{25 de enero de 2026}
 
@@ -25,36 +65,150 @@
 \maketitle
 
 \section*{Resumen}
-El presente informe técnico documenta los hallazgos obtenidos durante la revisión inicial de la documentación de Looker Studio, como parte del análisis de información realizado en las primeras semanas de prácticas. El trabajo refleja habilidades de análisis, revisión estructurada de documentación técnica y atención al detalle.
+El presente informe técnico documenta el análisis y la optimización de un flujo de trabajo asociado a procesos internos de carácter operativo, desarrollado en el marco de las prácticas profesionales. El estudio se centra en la revisión de la secuencia de actividades, los tiempos de ejecución, los mecanismos de comunicación y control, así como en la identificación de cuellos de botella y retrabajos presentes en el proceso analizado.
+
+A partir de este análisis, se identificaron áreas de oportunidad orientadas a mejorar la eficiencia operativa, reducir la ejecución de tareas manuales repetitivas y fortalecer el seguimiento del estado de las actividades. Con base en ello, se propone una optimización del flujo de trabajo sustentada en la reorganización de las etapas del proceso y en la mejora de los mecanismos de control y visualización de la información.
+
+El informe evidencia el desarrollo de competencias en análisis de procesos, pensamiento crítico, documentación técnica y mejora continua, alineadas con el perfil profesional de Ingeniería en Sistemas y con los objetivos formativos de las prácticas profesionales.
+
 
 \section*{Introducción}
-Las prácticas profesionales representan una oportunidad para aplicar conocimientos académicos en un entorno real de trabajo. Durante las primeras semanas se desarrolló un proceso de análisis de documentación técnica con el fin de comprender herramientas, flujos de datos y procesos utilizados en la organización.
+Las prácticas profesionales constituyen una etapa formativa fundamental para la aplicación de los conocimientos adquiridos durante la formación académica en un entorno profesional. En este contexto, las actividades desarrolladas permiten analizar procesos internos, identificar áreas de oportunidad y proponer soluciones orientadas a la optimización del flujo de trabajo.
 
-Este informe presenta los hallazgos obtenidos a partir de la revisión de la documentación oficial de Looker Studio, con énfasis en la comprensión de la plataforma y en la identificación de oportunidades de mejora o aprendizaje relevante para el proyecto asignado.
+El presente informe tiene como objetivo documentar el análisis de un proceso interno de carácter operativo, con énfasis en la secuencia de actividades, los tiempos de ejecución, los mecanismos de comunicación y control, así como en la identificación de cuellos de botella y retrabajos. A partir de dicho análisis, se plantean propuestas de optimización orientadas a mejorar la eficiencia operativa, reducir la ejecución de tareas manuales repetitivas y fortalecer el seguimiento del proceso, sin comprometer información sensible de la organización.
 
-\section{Descripción de la actividad}
-Contexto de la revisión y tipo de sistemas o componentes analizados
-(sin mencionar nombres ni plataformas).
+El desarrollo de esta actividad contribuye al fortalecimiento de competencias relacionadas con el análisis de procesos, el pensamiento crítico, la documentación técnica y la mejora continua, las cuales se encuentran alineadas con el perfil profesional de Ingeniería en Sistemas y con los objetivos formativos de las prácticas profesionales.
 
-\section{Metodología de revisión}
-Criterios utilizados para evaluar el código:
-- estructura
-- validaciones
-- manejo de errores
-- legibilidad
-- lógica general
 
-\section{Hallazgos}
-Listado de errores, inconsistencias o áreas de mejora detectadas.
+\section*{Descripción del proceso analizado}
+El proceso analizado corresponde a un flujo de trabajo interno orientado al registro, seguimiento y control de cambios de carácter operativo. Dicho proceso inicia con la solicitud de registro de un cambio en un consolidado interno, el cual funciona como repositorio central de información para la gestión y control de las actividades asociadas.
 
-\section{Acciones realizadas o sugeridas}
-Correcciones aplicadas o recomendaciones propuestas.
+Una vez registrado el cambio, se realiza la actualización periódica de su estatus de instalación conforme avanza el proceso. Esta actualización se lleva a cabo de manera manual y requiere la validación individual de cada registro, considerando la información disponible y la fecha de instalación propuesta. Con base en esta referencia temporal, se efectúa un seguimiento continuo del estatus con el objetivo de verificar el avance del proceso e identificar posibles desviaciones o retrasos.
 
-\section{Resultados}
-Beneficios obtenidos a partir de la revisión realizada.
+Como parte del flujo operativo, el consolidado es transferido a una hoja de cálculo interna destinada al control y organización de la información. Esta hoja funciona como una fuente intermedia para el análisis y seguimiento del proceso, permitiendo centralizar los datos relevantes de los cambios registrados. Posteriormente, la información contenida en dicha hoja de cálculo es integrada en un informe de seguimiento, el cual facilita la visualización del estado general de los cambios y su progreso dentro del flujo de trabajo.
 
-\section{Conclusiones}
-Aprendizajes técnicos y competencias desarrolladas.
+El proceso descrito presenta una alta dependencia de actividades manuales y de la actualización constante de la información, así como de la verificación de elementos asociados a cada cambio. Estas características influyen directamente en los tiempos de ejecución y en la eficiencia del flujo de trabajo, constituyéndose como factores clave para su análisis y posterior optimización.
+
+
+\section*{Metodología de análisis del proceso}
+La metodología aplicada para el análisis del proceso se basó en un enfoque descriptivo y sistemático, orientado a comprender el funcionamiento del flujo de trabajo e identificar oportunidades de mejora en términos de eficiencia, control y seguimiento. El análisis se realizó sin intervenir en sistemas productivos ni utilizar información sensible, manteniendo un nivel de abstracción adecuado para fines académicos.
+
+En una primera etapa, se llevó a cabo la identificación y delimitación del proceso, definiendo su alcance desde la solicitud inicial del cambio hasta su seguimiento y visualización en el informe de control. Esta delimitación permitió establecer de manera clara los puntos de inicio y fin del flujo de trabajo, así como las actividades intermedias que lo conforman.
+
+Posteriormente, se realizó una revisión detallada de la secuencia de actividades, analizando el orden de ejecución de las tareas, su interdependencia y los mecanismos de transferencia de información entre cada etapa. Este análisis permitió identificar redundancias, dependencias innecesarias y posibles oportunidades de simplificación del proceso.
+
+Asimismo, se evaluaron los tiempos de ejecución asociados a las actividades críticas, considerando el tiempo requerido para la validación y actualización del estatus de cada cambio. Esta evaluación facilitó la identificación de actividades con mayor carga operativa y su impacto en el desempeño general del flujo de trabajo.
+
+Como parte de la metodología, se analizaron los mecanismos de comunicación y seguimiento utilizados, así como la presencia de cuellos de botella y retrabajos derivados de la falta de actualización o de procesos de verificación repetitivos. Finalmente, los hallazgos obtenidos se organizaron en áreas de oportunidad y sirvieron como base para la formulación de la propuesta de optimización del flujo de trabajo, orientada a la mejora continua del proceso analizado.
+
+
+\section*{Identificación de áreas de oportunidad}
+A partir de la aplicación de la metodología de análisis del proceso, se identificaron diversas áreas de oportunidad que impactan directamente en la eficiencia, el control y el seguimiento del flujo de trabajo analizado. Dichas áreas se relacionan principalmente con la dependencia de actividades manuales, los mecanismos de comunicación utilizados y la ausencia de herramientas centralizadas de monitoreo.
+
+En primer lugar, se identificó como área de oportunidad la validación manual del estatus de cada cambio, la cual requiere un tiempo estimado de entre uno y tres minutos por registro. Si bien este tiempo resulta reducido de manera individual, su acumulación representa una carga operativa significativa cuando el volumen de cambios es elevado, afectando el desempeño general del proceso.
+
+Asimismo, se detectó un cuello de botella asociado a la verificación de la documentación vinculada a cada cambio. Esta actividad se encuentra estrechamente relacionada con la actualización del estatus, por lo que cualquier retraso en la revisión documental repercute directamente en el avance del flujo de trabajo y en la actualización oportuna de la información consolidada.
+
+Otra área de oportunidad relevante corresponde a la presencia de retrabajos derivados de la falta de actualización del estatus, lo que obliga a realizar comunicaciones adicionales para solicitar la actualización de la información. Estos retrabajos incrementan la carga operativa y el número de interacciones necesarias para completar el proceso, sin aportar valor directo a las actividades principales.
+
+Adicionalmente, se identificaron limitaciones en los mecanismos de comunicación y transferencia de información, ya que el proceso depende exclusivamente de correos electrónicos internos y herramientas de mensajería instantánea. Esta dependencia dificulta la trazabilidad del estado de los cambios y favorece la dispersión de la información en múltiples canales.
+
+Finalmente, se observó una oportunidad de mejora en los mecanismos de control y seguimiento del proceso, derivada de la ausencia de un medio centralizado que permita verificar de manera inmediata si un cambio ha alcanzado la etapa final de instalación. La falta de visibilidad integral del proceso limita la capacidad de monitoreo y genera la necesidad de validaciones manuales adicionales.
+
+
+\section*{Propuesta de optimización del flujo de trabajo}
+Con base en las áreas de oportunidad identificadas durante el análisis del proceso, se propone una optimización del flujo de trabajo orientada a reducir la carga operativa, mejorar la trazabilidad de la información y fortalecer los mecanismos de control y seguimiento del proceso interno.
+
+En primer lugar, se propone la estandarización de la actualización del estatus de los cambios mediante la definición de criterios claros y consistentes para el registro de la información. Esta estandarización permitiría disminuir la variabilidad en las actualizaciones, reducir errores y minimizar la necesidad de validaciones manuales repetitivas, contribuyendo a una mayor uniformidad en el manejo del proceso.
+
+Asimismo, se sugiere la consolidación de la información en una única fuente de control que funcione como referencia central del proceso. Al centralizar la información, se reduciría la dependencia de múltiples hojas de cálculo, se facilitaría la consulta del estado actual de cada cambio y se disminuiría el riesgo de duplicidades o pérdida de información.
+
+Como parte de la optimización, se plantea la implementación de un mecanismo de visualización centralizado que permita monitorear de manera continua el avance del proceso y verificar si los cambios han alcanzado la etapa final de instalación. Este mecanismo contribuiría a disminuir la necesidad de comunicaciones adicionales y a reducir los retrabajos asociados al envío de recordatorios para la actualización del estatus.
+
+Adicionalmente, se propone fortalecer los puntos de control dentro del flujo de trabajo mediante la incorporación de validaciones intermedias que permitan detectar de forma temprana retrasos, inconsistencias o información incompleta. Estos puntos de control facilitarían una gestión más proactiva del proceso y permitirían priorizar oportunamente las actividades que requieran atención inmediata.
+
+Finalmente, la optimización propuesta busca transformar el flujo de trabajo actual en un proceso más eficiente, estructurado y orientado a la mejora continua, manteniendo un enfoque preventivo que permita reducir los tiempos de ejecución, mejorar la calidad de la información y optimizar el uso de los recursos disponibles.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.55\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=1.25cm and 2.4cm,
+  font=\small
+]
+
+% Nodos
+\node (start) [startstop] {Inicio};
+
+\node (step1) [process, below=of start] {Registro del cambio en fuente central};
+
+\node (step2) [process, below=of step1] {Estandarización y validación inicial de datos};
+
+\node (decision1) [decision, below=of step2] {¿Información completa?};
+
+\node (step3) [process, below=of decision1] {Actualización del estatus con criterios definidos};
+
+\node (step4) [process, below=of step3] {Punto de control: verificación de avance por fecha propuesta};
+
+\node (decision2) [decision, below=of step4] {¿Alcanzó etapa final?};
+
+\node (step5) [process, below=of decision2] {Monitoreo en mecanismo de visualización centralizado};
+
+\node (end) [startstop, below=of step5] {Fin};
+
+% Flujo principal
+\draw [arrow] (start) -- (step1);
+\draw [arrow] (step1) -- (step2);
+\draw [arrow] (step2) -- (decision1);
+
+% Rama: Información completa
+\draw [arrow] (decision1) -- node[right]{Sí} (step3);
+\draw [arrow] (step3) -- (step4);
+\draw [arrow] (step4) -- (decision2);
+
+% Rama: Llegó a etapa final
+\draw [arrow] (decision2) -- node[right]{Sí} (step5);
+\draw [arrow] (step5) -- (end);
+
+% Rama: Información incompleta -> corrección / retrabajo controlado
+\draw [arrow] (decision1.east) -- ++(3.0cm,0)
+  node[above]{No}
+  |- (step2.east);
+
+% Rama: No alcanzó etapa final -> seguimiento continuo (sin comunicaciones adicionales)
+\draw [arrow] (decision2.west) -- ++(-3.0cm,0)
+  node[above]{No}
+  |- (step4.west);
+
+\end{tikzpicture}%
+}
+\caption{Diagrama de flujo del proceso optimizado para el registro, seguimiento y control de cambios operativos.}
+\end{figure}
+
+El flujo de trabajo optimizado se representa de forma gráfica mediante un diagrama de flujo, el cual permite visualizar la secuencia de actividades, los puntos de decisión y los posibles retrabajos asociados a la verificación de la documentación. Esta representación facilita la comprensión del proceso propuesto y refuerza la identificación de los mecanismos de control incorporados en la optimización.
+
+
+\section*{Resultados esperados}
+A partir de la implementación de la optimización propuesta en el flujo de trabajo, se esperan mejoras en la eficiencia operativa, el control del proceso y la gestión de la información. Dichos resultados se proyectan con base en la reducción de actividades manuales, la centralización de la información y el fortalecimiento de los mecanismos de seguimiento.
+
+En primer lugar, se espera una disminución del tiempo invertido en la validación del estatus de los cambios, al contar con información estandarizada y disponible de forma centralizada. Esta mejora permitirá reducir la carga operativa asociada a la revisión individual de registros y facilitará la atención de un mayor volumen de cambios dentro de un periodo de tiempo comparable.
+
+Asimismo, se prevé una reducción de los retrabajos relacionados con el envío de recordatorios para la actualización del estatus, al disponer de un mecanismo de seguimiento que permita identificar de manera oportuna los cambios pendientes o con retraso. Esto contribuirá a disminuir la dependencia de comunicaciones adicionales y a mejorar la continuidad del flujo de trabajo.
+
+Otro resultado esperado es la mejora en la trazabilidad y visibilidad del proceso, al contar con un medio de seguimiento que permita identificar con claridad la etapa en la que se encuentra cada cambio y verificar si ha alcanzado la fase final de instalación. Esta visibilidad facilitará el monitoreo continuo y favorecerá una toma de decisiones más informada en relación con la priorización de actividades.
+
+Finalmente, se espera que la optimización propuesta fortalezca el control operativo y la calidad de la información utilizada, al incorporar criterios consistentes de actualización y puntos de control intermedios. En conjunto, estos resultados contribuirán a un flujo de trabajo más estructurado, predecible y alineado con principios de mejora continua, generando valor para el desempeño del proceso y para el desarrollo de competencias profesionales adquiridas durante las prácticas profesionales.
+
+
+\section*{Conclusiones}
+El análisis y la optimización del flujo de trabajo desarrollados en el presente informe permitieron identificar áreas de oportunidad relevantes en un proceso interno de carácter operativo, particularmente relacionadas con la dependencia de actividades manuales, la gestión de la información y los mecanismos de control y seguimiento. A través de un enfoque sistemático y descriptivo, fue posible comprender el funcionamiento del proceso, así como los factores que impactan su eficiencia y desempeño.
+
+La propuesta de optimización planteada aborda de manera directa las problemáticas identificadas, mediante la estandarización de la actualización del estatus, la centralización de la información y el fortalecimiento de los puntos de control dentro del flujo de trabajo. Estas acciones permiten proyectar un proceso más estructurado, con mayor trazabilidad y menor carga operativa, alineado con principios de mejora continua y eficiencia operativa.
+
+Desde el punto de vista formativo, el desarrollo de esta actividad contribuyó significativamente al fortalecimiento de competencias en análisis de procesos, pensamiento crítico, documentación técnica y mejora continua. Asimismo, permitió aplicar conocimientos propios de la Ingeniería en Sistemas en un contexto operativo real, manteniendo en todo momento criterios de confidencialidad y abstracción adecuados para fines académicos.
+
+En conjunto, los resultados obtenidos evidencian la importancia de analizar y optimizar los flujos de trabajo internos como una estrategia para mejorar el desempeño operativo y la calidad de la información. La experiencia adquirida durante esta actividad refuerza la capacidad para proponer soluciones estructuradas y sostenibles, aportando valor tanto al proceso analizado como al desarrollo profesional alcanzado durante las prácticas profesionales.
+
 
 \section*{Referencias}
 

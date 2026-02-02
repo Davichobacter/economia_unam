@@ -10,12 +10,13 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage[section]{placeins} 
+\usepackage{float}
 
 \geometry{letterpaper, margin=2.5cm}
 \onehalfspacing
 
 % Datos del informe (puedes modificarlos)
-\title{Avance 2 \\ Reporte de Depuración y Evaluación de Componentes de Software}
+\title{Avance 4 \\ Actualización y consulta de bases de datos internas}
 \author{David Armando Ramírez Navarrete}
 \date{11 de enero de 2026}
 
@@ -24,40 +25,86 @@
 \maketitle
 
 \section*{Resumen}
-El presente informe técnico documenta los hallazgos obtenidos durante la revisión inicial de la documentación de Looker Studio, como parte del análisis de información realizado en las primeras semanas de prácticas. El trabajo refleja habilidades de análisis, revisión estructurada de documentación técnica y atención al detalle.
+El presente informe técnico documenta las actividades realizadas durante la ejecución de la Actividad~4, enfocada en la actualización, consulta y análisis de bases de datos internas como parte del desarrollo de prácticas profesionales. Las tareas descritas incluyen la ejecución de consultas SQL simples y avanzadas, validaciones de consistencia, actualizaciones controladas de registros y la organización de información mediante vistas consolidadas, con el objetivo de apoyar procesos operativos y de análisis.
+
+Con el propósito de proteger la confidencialidad de la información y dar cumplimiento a los acuerdos establecidos, todas las actividades se llevaron a cabo en un entorno local y aislado, utilizando una base de datos simulada hospedada mediante contenedores y herramientas de administración de bases de datos. El trabajo evidencia competencias en el manejo estructurado de datos, análisis de información y aplicación de buenas prácticas en la gestión de bases de datos, sin exponer información real o sensible de la organización.
+
 
 \section*{Introducción}
-Las prácticas profesionales representan una oportunidad para aplicar conocimientos académicos en un entorno real de trabajo. Durante las primeras semanas se desarrolló un proceso de análisis de documentación técnica con el fin de comprender herramientas, flujos de datos y procesos utilizados en la organización.
+Las prácticas profesionales representan una oportunidad para aplicar los conocimientos adquiridos durante la formación académica en un entorno técnico-profesional controlado. En este contexto, durante el desarrollo de las primeras actividades se llevaron a cabo tareas orientadas al análisis, consulta y actualización de información almacenada en bases de datos, como apoyo a procesos operativos y de análisis interno.
 
-Este informe presenta los hallazgos obtenidos a partir de la revisión de la documentación oficial de Looker Studio, con énfasis en la comprensión de la plataforma y en la identificación de oportunidades de mejora o aprendizaje relevante para el proyecto asignado.
+La Actividad~4 se enfocó en el manejo estructurado de datos mediante el uso de consultas SQL, validaciones de consistencia, actualizaciones controladas de registros y la organización de información a través de vistas consolidadas. Dichas actividades se realizaron en un entorno local y aislado, utilizando una base de datos simulada, con el objetivo de evitar la exposición de información sensible y dar cumplimiento a los acuerdos de confidencialidad establecidos.
 
-\section{Descripción de la actividad}
-Contexto de la revisión y tipo de sistemas o componentes analizados
-(sin mencionar nombres ni plataformas).
+El presente informe documenta las actividades realizadas, la metodología empleada y los resultados obtenidos, evidenciando el desarrollo de competencias en gestión de bases de datos, análisis de información y aplicación de buenas prácticas en el manejo de datos dentro de un entorno profesional.
 
-\section{Metodología de revisión}
-Criterios utilizados para evaluar el código:
-- estructura
-- validaciones
-- manejo de errores
-- legibilidad
-- lógica general
 
-\section{Hallazgos}
-Listado de errores, inconsistencias o áreas de mejora detectadas.
+\section*{Descripción de la actividad}
+La actividad desarrollada consistió en la revisión, consulta y actualización de información almacenada en una base de datos interna, como parte del apoyo a procesos operativos y de análisis. El trabajo se enfocó en el manejo de registros asociados a eventos operativos, categorías, responsables y orígenes de información, utilizando estructuras relacionales previamente definidas.
 
-\section{Acciones realizadas o sugeridas}
-Correcciones aplicadas o recomendaciones propuestas.
+Las actividades realizadas incluyeron la ejecución de consultas para la recuperación de información relevante, la validación de la consistencia de los datos, la identificación de registros incompletos o inconsistentes y la aplicación de actualizaciones controladas para la normalización de valores. Asimismo, se llevó a cabo la organización de la información mediante la creación de vistas consolidadas, con el propósito de facilitar el análisis posterior y la generación de métricas operativas.
 
-\section{Resultados}
-Beneficios obtenidos a partir de la revisión realizada.
+Con el fin de proteger la confidencialidad de la información y evitar la exposición de datos sensibles, todas las tareas se realizaron sobre un conjunto de datos ficticio, en un entorno local y aislado. De esta manera, la actividad permitió simular un contexto de trabajo real, manteniendo el apego a buenas prácticas en la gestión de bases de datos y cumpliendo con los lineamientos establecidos en los acuerdos de confidencialidad.
 
-\section{Conclusiones}
-Aprendizajes técnicos y competencias desarrolladas.
+
+\section*{Metodología de trabajo con bases de datos}
+La metodología empleada para el trabajo con bases de datos se basó en la aplicación de criterios técnicos orientados a garantizar la correcta gestión, comprensión y mantenimiento de la información. Para ello, se establecieron lineamientos claros para la evaluación y elaboración del código SQL utilizado durante la actividad.
+
+En primer lugar, se consideró la \textbf{estructura} del código, asegurando una organización lógica de las sentencias, el uso adecuado de cláusulas \textit{SELECT}, \textit{JOIN}, \textit{WHERE}, \textit{GROUP BY} y \textit{ORDER BY}, así como la separación clara entre consultas de análisis, validaciones y actualizaciones. Este enfoque facilitó la lectura del código y su reutilización en futuros análisis.
+
+Asimismo, se evaluó la \textbf{legibilidad} del código, priorizando el uso de nombres de tablas y columnas descriptivos, una correcta indentación y el uso de alias claros. Estas prácticas permitieron mejorar la comprensión de las consultas, reducir errores y facilitar la revisión del trabajo realizado.
+
+Finalmente, se analizó la \textbf{lógica general} de las consultas, verificando que los resultados obtenidos fueran coherentes con los objetivos planteados. Esto incluyó la validación de condiciones, el correcto uso de funciones de agregación, expresiones condicionales y consultas avanzadas, así como la coherencia entre los datos de entrada y los resultados generados.
+
+La aplicación de estos criterios permitió desarrollar consultas eficientes y confiables, asegurando la calidad de la información procesada y fortaleciendo las competencias en el manejo profesional de bases de datos.
+
+
+\section*{Actividades realizadas}
+Durante el desarrollo de la Actividad 4 se llevaron a cabo diversas acciones orientadas a la consulta, validación, actualización y organización de información almacenada en una base de datos simulada. Dichas actividades se realizaron en un entorno local y controlado, con el objetivo de replicar escenarios reales de trabajo sin comprometer información sensible.
+
+Entre las principales actividades realizadas se encuentran la ejecución de consultas SQL para la recuperación de registros con base en distintos criterios operativos, tales como estatus, fechas, categorías y responsables. Estas consultas incluyeron sentencias simples y avanzadas, incorporando uniones entre múltiples tablas, funciones de agregación, expresiones condicionales y consultas estructuradas para el análisis de la información.
+
+Asimismo, se llevaron a cabo procesos de validación de datos, orientados a la identificación de registros incompletos, valores no válidos e inconsistencias temporales. Estas validaciones permitieron evaluar la calidad de la información y detectar áreas de oportunidad para su corrección.
+
+Como parte de la actividad, se realizaron actualizaciones controladas de registros específicos, enfocadas en la normalización de valores y la corrección de estatus, asegurando en todo momento la integridad de los datos. Finalmente, se procedió a la creación y consulta de vistas consolidadas, diseñadas para facilitar el análisis integral de la información y su consumo en procesos de generación de métricas y reportes operativos.
+
+
+\section*{Resultados obtenidos}
+Como resultado de las actividades realizadas, se logró una mejora en la calidad, consistencia y organización de la información almacenada en la base de datos simulada. La correcta configuración del entorno de trabajo, evidenciada en las primeras capturas del Apéndice de Evidencias, permitió establecer una conexión funcional a la base de datos y garantizar un entorno local y aislado para la ejecución de las consultas.
+
+Las consultas iniciales presentadas en el apéndice evidencian la recuperación de registros con base en criterios operativos como estatus, fechas y prioridades, permitiendo obtener una visión clara del estado de la información y apoyar el análisis operativo. Posteriormente, las consultas orientadas a validación mostraron la identificación de registros incompletos, valores no válidos e inconsistencias temporales, como fechas de cierre anteriores a la fecha de creación, lo que permitió evaluar la integridad de los datos.
+
+Las evidencias correspondientes a consultas más avanzadas muestran el uso de uniones entre múltiples tablas, funciones de agregación y expresiones condicionales para generar métricas operativas, tales como distribuciones por categoría, análisis temporal por origen y cálculo de tiempos promedio de cierre. Estos resultados facilitaron la identificación de patrones de comportamiento y diferencias en el desempeño operativo.
+
+Asimismo, las capturas relacionadas con las sentencias de actualización documentan la ejecución de actualizaciones controladas orientadas a la normalización de valores y corrección de estatus. Estas acciones contribuyeron a la estandarización de la información y a la mejora de su confiabilidad, manteniendo la integridad de los datos durante todo el proceso.
+
+Finalmente, las últimas evidencias del apéndice muestran la creación y consulta de vistas consolidadas, mediante las cuales se integró información proveniente de múltiples tablas en un solo conjunto de datos. Esta organización permitió facilitar el análisis integral de la información y sirvió como base estructurada para la generación de indicadores operativos y el apoyo a la elaboración de reportes internos.
+
+
+\section*{Conclusiones}
+El desarrollo de la Actividad 4 permitió consolidar aprendizajes técnicos fundamentales relacionados con la gestión de bases de datos y el manejo estructurado de la información en un contexto profesional. A través de la ejecución de consultas SQL simples y avanzadas, se fortaleció la comprensión de estructuras relacionales, el uso de uniones entre múltiples tablas y la aplicación de funciones de agregación para el análisis de datos.
+
+Asimismo, la aplicación de validaciones y actualizaciones controladas evidenció la importancia de asegurar la consistencia, integridad y calidad de la información. La identificación de registros incompletos, valores no válidos e inconsistencias temporales, así como la normalización de estatus y prioridades, contribuyó a una mayor confiabilidad de los datos utilizados en los procesos operativos.
+
+Desde el punto de vista profesional, la actividad favoreció el desarrollo de competencias relacionadas con el análisis crítico de la información, la atención al detalle y la aplicación de buenas prácticas en el manejo de bases de datos. El uso de un entorno local y aislado, apoyado en herramientas de administración y contenedores, permitió simular escenarios reales de trabajo, cumpliendo con los acuerdos de confidencialidad y evitando la exposición de información sensible.
+
+En conjunto, los aprendizajes obtenidos fortalecen el perfil profesional en el área de Ingeniería en Sistemas, al evidenciar la capacidad para gestionar información de manera responsable, estructurada y orientada al apoyo de procesos operativos y de análisis dentro de una organización.
+
 
 \section*{Referencias}
 
 \begin{itemize}
+    \item DataCamp. (n.d.). \textit{Python try-except: Exception handling explained}.  
+    Recuperado de: \url{https://www.datacamp.com/tutorial/python-try-except}
+
+    \item DataCamp. (n.d.). \textit{Python f-strings: Everything you need to know}.  
+    Recuperado de: \url{https://www.datacamp.com/tutorial/python-f-string}
+
+    \item Google. (n.d.). \textit{Importar y exportar archivos}.  
+    Recuperado de: \url{https://support.google.com/docs/answer/3093340?hl=es-419}
+
+    \item Google. (n.d.). \textit{Convertir archivos a Google Docs}.  
+    Recuperado de: \url{https://support.google.com/docs/answer/3093197?hl=es-419}
+
     \item Google Cloud. (n.d.). \textit{Cómo crear campos calculados en Looker Studio}.  
     Recuperado de: \url{https://docs.cloud.google.com/looker/docs/studio/tutorial-create-calculated-fields-in-looker-studio?hl=es-419}
 
@@ -66,7 +113,134 @@ Aprendizajes técnicos y competencias desarrolladas.
 
     \item Google Cloud. (n.d.). \textit{Agregar, editar y solucionar problemas con campos calculados en Looker Studio}.  
     Recuperado de: \url{https://docs.cloud.google.com/looker/docs/studio/add-edit-and-troubleshoot-calculated-fields?hl=es-419}
+
+    \item Python Software Foundation. (n.d.). \textit{Built-in exceptions}.  
+    Recuperado de: \url{https://docs.python.org/3/library/exceptions.html}
+
+    \item Python Software Foundation. (n.d.). \textit{PEP 8 -- Style Guide for Python Code}.  
+    Recuperado de: \url{https://peps.python.org/pep-0008/}
+
+    \item Real Python. (n.d.). \textit{Python Exceptions: An Introduction}.  
+    Recuperado de: \url{https://realpython.com/python-exceptions/}
 \end{itemize}
+
+\appendix
+\section{Evidencias gráficas de la Actividad 4}
+El presente apéndice integra las evidencias gráficas correspondientes a la Actividad 4, las cuales documentan el proceso de configuración del entorno de trabajo, la ejecución de consultas SQL, la validación de información, la realización de actualizaciones controladas y la organización de datos mediante vistas consolidadas.
+
+Las evidencias se presentan en el mismo orden en que fueron generadas durante el desarrollo de la actividad, con el propósito de reflejar de manera secuencial el flujo de trabajo seguido. Cada captura corresponde a una etapa específica del proceso y respalda los resultados descritos en las secciones anteriores del informe.
+
+Con el fin de proteger la confidencialidad de la información y cumplir con los acuerdos establecidos, todas las capturas fueron obtenidas a partir de un entorno local y aislado, utilizando una base de datos simulada. En consecuencia, las imágenes incluidas no contienen información real ni datos sensibles de la organización, y se presentan únicamente con fines académicos y formativos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/dbeaver_config}
+    \caption{Configuración de la conexión a la base de datos PostgreSQL simulada, establecida sobre un entorno local, utilizada para la ejecución de consultas y validaciones sin exponer información sensible.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/docker_config}
+    \caption{Definición del servicio de base de datos PostgreSQL mediante contenedores Docker, utilizada para hospedar una base de datos ficticia en un entorno local y controlado.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_1}
+    \caption{Ejecución de una consulta SQL para la recuperación de registros en estatus \textit{EN\_PROCESO}, ordenados por prioridad y fecha de creación, utilizada para el análisis operativo.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_2}
+    \caption{Consulta SQL orientada a la identificación de registros sin responsable asignado, como parte del proceso de validación y control de calidad de la información.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_3}
+    \caption{Consulta utilizada para la validación de valores de estatus no contemplados dentro de los criterios definidos, con el objetivo de detectar inconsistencias en los datos.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_4}
+    \caption{Identificación de registros con inconsistencias temporales, donde la fecha de cierre es anterior a la fecha de creación, como parte del proceso de validación de integridad de la información.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_5}
+    \caption{Consulta con unión de tablas utilizada para generar una serie temporal de registros creados por mes y por origen, orientada al análisis de volumen y comportamiento operativo.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_6}
+    \caption{Consulta SQL con agregaciones y unión de tablas utilizada para calcular el tiempo promedio de cierre por categoría, como indicador de desempeño operativo.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_7}
+    \caption{Consulta SQL con agregaciones y unión de tablas utilizada para calcular el tiempo promedio de cierre por categoría, permitiendo identificar diferencias en el desempeño operativo entre áreas funcionales.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_8}
+    \caption{Consulta SQL orientada al conteo de registros por tipo de evento, utilizada para analizar el avance de los registros a través de las distintas etapas del proceso operativo.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_9}
+    \caption{Consulta avanzada mediante expresiones comunes de tabla (CTE) utilizada para calcular el porcentaje de registros que alcanzan cada tipo de evento, con relación al total de registros creados.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_10}
+    \caption{Consulta SQL con funciones de ventana utilizada para generar un ranking de responsables con mayor número de registros activos, como apoyo al análisis de distribución de carga operativa.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/query_11}
+    \caption{Consulta orientada a la generación de indicadores de calidad de datos por origen, identificando registros incompletos y porcentajes de información faltante como apoyo al control de consistencia.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/update_1}
+    \caption{Ejecución de una actualización controlada de estatus sobre un registro específico, incorporando validaciones previas para asegurar la integridad del proceso.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/update_2}
+    \caption{Proceso de normalización de valores de prioridad mediante sentencias de actualización, con el objetivo de estandarizar la información almacenada en la base de datos.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/update_3}
+    \caption{Actualización de registros utilizando expresiones condicionales para homologar distintos valores de prioridad, garantizando consistencia semántica en la información.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/view_1}
+    \caption{Creación de una vista lógica consolidada a partir de múltiples tablas, diseñada para facilitar el análisis integral de la información y su consumo por herramientas de visualización.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{E4/view_2}
+    \caption{Consulta sobre la vista consolidada utilizada para obtener métricas agregadas por categoría, origen, estatus y prioridad, como apoyo a la generación de reportes operativos.}
+\end{figure}
+
+
 
 \end{document}
 

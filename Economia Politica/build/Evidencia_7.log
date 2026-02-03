@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.21)  2 FEB 2026 23:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.21)  2 FEB 2026 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,27 +313,144 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/ramir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 206.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 98.
  (C:\Users\ramir\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 206.
+(Font)              <12> on input line 98.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 206.
+(Font)              <8> on input line 98.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 206.
+(Font)              <6> on input line 98.
 
-Overfull \hbox (177.6927pt too wide) in paragraph at lines 205--207
+Overfull \hbox (177.6927pt too wide) in paragraph at lines 97--99
 []$\T1/cmtt/m/n/12 https : / / docs . cloud . google . com / looker / docs / studio / tutorial-[]create-[]calculated-[]fields-[]in-[]looker-[]studio ?
  []
 
 
-Overfull \hbox (20.45563pt too wide) in paragraph at lines 208--210
+Overfull \hbox (20.45563pt too wide) in paragraph at lines 100--102
 \T1/cmr/m/n/12 de: []$\T1/cmtt/m/n/12 https : / / docs . cloud . google . com / looker / docs / studio / query-[]result-[]variables ?
  []
 
-[5] (c:\Users\ramir\OneDrive\Documentos\GitHub\economia_unam\Economia Politica\build\Evidencia_7.aux
+<E7/code.png, id=38, 1445.4pt x 776.9025pt>
+File: E7/code.png Graphic file (type png)
+<use E7/code.png>
+Package pdftex.def Info: E7/code.png  used on input line 120.
+(pdftex.def)             Requested size: 377.62642pt x 202.9738pt.
+[5]
+<E7/S1.png, id=50, 1445.4pt x 776.9025pt>
+File: E7/S1.png Graphic file (type png)
+<use E7/S1.png>
+Package pdftex.def Info: E7/S1.png  used on input line 129.
+(pdftex.def)             Requested size: 377.62642pt x 202.9738pt.
+<E7/S2.png, id=51, 1445.4pt x 776.9025pt>
+File: E7/S2.png Graphic file (type png)
+<use E7/S2.png>
+Package pdftex.def Info: E7/S2.png  used on input line 139.
+(pdftex.def)             Requested size: 377.62642pt x 202.9738pt.
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.146 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.146 
+       <./E7/code.png> <./E7/S1.png>]
+<E7/S3.png, id=60, 1445.4pt x 776.9025pt>
+File: E7/S3.png Graphic file (type png)
+<use E7/S3.png>
+Package pdftex.def Info: E7/S3.png  used on input line 149.
+(pdftex.def)             Requested size: 377.62642pt x 202.9738pt.
+<E7/S4.png, id=61, 1445.4pt x 776.9025pt>
+File: E7/S4.png Graphic file (type png)
+<use E7/S4.png>
+Package pdftex.def Info: E7/S4.png  used on input line 159.
+(pdftex.def)             Requested size: 377.62642pt x 202.9738pt.
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.166 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.166 
+       <./E7/S2.png> <./E7/S3.png>]
+<E7/R1.jpeg, id=71, 1204.5pt x 707.64375pt>
+File: E7/R1.jpeg Graphic file (type jpg)
+<use E7/R1.jpeg>
+Package pdftex.def Info: E7/R1.jpeg  used on input line 169.
+(pdftex.def)             Requested size: 424.82523pt x 249.59023pt.
+<E7/R2.jpeg, id=72, 1204.5pt x 709.90219pt>
+File: E7/R2.jpeg Graphic file (type jpg)
+<use E7/R2.jpeg>
+Package pdftex.def Info: E7/R2.jpeg  used on input line 179.
+(pdftex.def)             Requested size: 424.82523pt x 250.38678pt.
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.186 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.186 
+       <./E7/S4.png> <./E7/R1.jpeg>]
+<E7/R3.jpeg, id=80, 1204.5pt x 716.6775pt>
+File: E7/R3.jpeg Graphic file (type jpg)
+<use E7/R3.jpeg>
+Package pdftex.def Info: E7/R3.jpeg  used on input line 189.
+(pdftex.def)             Requested size: 424.82523pt x 252.77649pt.
+ [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.196 
+       <./E7/R2.jpeg>]
+<E7/R4.jpeg, id=86, 1204.5pt x 713.66624pt>
+File: E7/R4.jpeg Graphic file (type jpg)
+<use E7/R4.jpeg>
+Package pdftex.def Info: E7/R4.jpeg  used on input line 199.
+(pdftex.def)             Requested size: 424.82523pt x 251.71439pt.
+ [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.206 
+       <./E7/R3.jpeg>]
+<E7/R5.jpeg, id=92, 1204.5pt x 713.66624pt>
+File: E7/R5.jpeg Graphic file (type jpg)
+<use E7/R5.jpeg>
+Package pdftex.def Info: E7/R5.jpeg  used on input line 209.
+(pdftex.def)             Requested size: 424.82523pt x 251.71439pt.
+ [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.216 
+       <./E7/R4.jpeg>]
+<E7/R6.jpeg, id=98, 1204.5pt x 700.86844pt>
+File: E7/R6.jpeg Graphic file (type jpg)
+<use E7/R6.jpeg>
+Package pdftex.def Info: E7/R6.jpeg  used on input line 219.
+(pdftex.def)             Requested size: 424.82523pt x 247.20053pt.
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.227 
+       <./E7/R5.jpeg>] [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.229 \end{document}
+                     <./E7/R6.jpeg>] (c:\Users\ramir\OneDrive\Documentos\GitHub\economia_unam\Economia Politica\build\Evidencia_7.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -345,17 +462,17 @@ Package rerunfilecheck Info: File `Evidencia_7.out' has not changed.
 (rerunfilecheck)             Checksum: 01D79A2EB62CF8BBAC9DDF781B1FFEF7;251.
  ) 
 Here is how much of TeX's memory you used:
- 11001 strings out of 474486
- 176429 string characters out of 5743755
- 1933542 words of memory out of 5000000
- 33142 multiletter control sequences out of 15000+600000
+ 11113 strings out of 474486
+ 178140 string characters out of 5743755
+ 1934542 words of memory out of 5000000
+ 33235 multiletter control sequences out of 15000+600000
  566564 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,378b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,698b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ramir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\ramir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\ramir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\ramir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\ramir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\ramir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>
-Output written on "c:\Users\ramir\OneDrive\Documentos\GitHub\economia_unam\Economia Politica\build\Evidencia_7.pdf" (5 pages, 88795 bytes).
+Output written on "c:\Users\ramir\OneDrive\Documentos\GitHub\economia_unam\Economia Politica\build\Evidencia_7.pdf" (13 pages, 1913058 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 64 words of extra memory for PDF output out of 10000 (max. 10000000)
 

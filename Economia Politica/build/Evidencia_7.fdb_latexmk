@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770095631.99078 "c:/Users/ramir/OneDrive/Documentos/GitHub/economia_unam/Economia Politica/Evidencia_7.tex" "build/Evidencia_7.pdf" "Evidencia_7" 1770095632.99574 0
+["pdflatex"] 1770096950.25052 "c:/Users/ramir/OneDrive/Documentos/GitHub/economia_unam/Economia Politica/Evidencia_7.tex" "build/Evidencia_7.pdf" "Evidencia_7" 1770096952.05444 0
   "C:/Users/ramir/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768417197 84824 00961e542189d35971b97976efddaf85 ""
   "C:/Users/ramir/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk" 1764740315 49100 20578ca66c3b637afe9e52e8da70e6d2 ""
   "C:/Users/ramir/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1764740312 28440 8180beb1f5b46f5dae547a64984ea3ff ""
@@ -81,10 +81,21 @@
   "C:/Users/ramir/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/ramir/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/ramir/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Evidencia_7.tex" 1770095628 12707 1a910ca2ac7f5167d9e3ef3228249c85 ""
-  "build/Evidencia_7.aux" 1770095632 464 dc5665f5ffd79d8bc935623c721aac9a "pdflatex"
-  "build/Evidencia_7.out" 1770095632 251 01d79a2eb62cf8bbac9ddf781b1ffef7 "pdflatex"
-  "c:/Users/ramir/OneDrive/Documentos/GitHub/economia_unam/Economia Politica/Evidencia_7.tex" 1770095628 12707 1a910ca2ac7f5167d9e3ef3228249c85 ""
+  "E7/R1.jpeg" 1770094949 290578 3847cd1da1e67c1a59e1142406a01e03 ""
+  "E7/R2.jpeg" 1770094755 98130 220780abf35a69fc84a686f199f7756a ""
+  "E7/R3.jpeg" 1770094730 310606 843342bbf42c406d516a46ade5a673d1 ""
+  "E7/R4.jpeg" 1770094790 198536 e1160a86f10dc623b29e765a1e158a05 ""
+  "E7/R5.jpeg" 1770094821 198582 e42aef69c346b3f08171ab89454db17a ""
+  "E7/R6.jpeg" 1770094855 169023 966af411352f42edb3e63206d936f6d0 ""
+  "E7/S1.png" 1770093732 138989 9af53d911f701c329f944f551cd994e2 ""
+  "E7/S2.png" 1770093738 169863 5d5348af059969ce87949883f390768b ""
+  "E7/S3.png" 1770093743 173087 444c0fff8ba931bd5c6e87f564a3b64b ""
+  "E7/S4.png" 1770093748 121241 9bfd8371fa6b33d76c02a6332cfebcd4 ""
+  "E7/code.png" 1770093716 276771 b53cc9e8fa12f666f7ded3d80368ad91 ""
+  "Evidencia_7.tex" 1770096946 18112 6f5e41609d10db2fad54e76aca7b3052 ""
+  "build/Evidencia_7.aux" 1770096951 8753 72cb6714b9598db0cc1d75832cc5e590 "pdflatex"
+  "build/Evidencia_7.out" 1770096951 251 01d79a2eb62cf8bbac9ddf781b1ffef7 "pdflatex"
+  "c:/Users/ramir/OneDrive/Documentos/GitHub/economia_unam/Economia Politica/Evidencia_7.tex" 1770096946 18112 6f5e41609d10db2fad54e76aca7b3052 ""
   (generated)
   "build/Evidencia_7.aux"
   "build/Evidencia_7.log"

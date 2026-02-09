@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[letterpaper,margin=1.5cm,landscape]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+
+\tikzset{
+  concept/.style={
+    rectangle, rounded corners=6pt, draw, very thick,
+    align=center, text width=4.2cm, inner sep=6pt
+  },
+  small/.style={
+    rectangle, rounded corners=6pt, draw, thick,
+    align=center, text width=3.6cm, inner sep=5pt
+  },
+  link/.style={-{Latex[length=3mm]}, thick},
+  verb/.style={midway, fill=white, inner sep=2pt, font=\small}
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE Mapa conceptual: Crecimiento económico y cambio social en el siglo XIX}
+\end{center}
+
+\begin{tikzpicture}[node distance=12mm and 22mm]
+
+% ================== CENTRO ==================
+\node[concept, text width=6.8cm] (C) {Crecimiento económico\\y cambio social\\en el siglo XIX};
+
+% ================== RAMAS PRINCIPALES ==================
+\node[concept] (T) [above left=20mm and 45mm of C] {Cambios\\tecnológicos};
+\node[concept] (D) [above right=20mm and 45mm of C] {Impacto\\demográfico};
+\node[concept] (S) [left=60mm of C] {Cambios sociales\\e ideológicos};
+\node[concept] (P) [right=60mm of C] {Relaciones de\\producción};
+\node[concept] (E) [below=32mm of C] {Incidencia\\económica};
+
+% Conectores centrales
+\draw[link] (C) -- (T) node[verb]{fue impulsado por};
+\draw[link] (C) -- (D) node[verb]{se acompañó de};
+\draw[link] (C) -- (S) node[verb]{provocó};
+\draw[link] (C) -- (P) node[verb]{transformó};
+\draw[link] (C) -- (E) node[verb]{incidió en};
+
+% ================== TECNOLOGÍA ==================
+\node[small] (T1) [above=10mm of T] {Maquinaria\\industrial};
+\node[small] (T2) [right=12mm of T1] {Química aplicada\\a industria y\\agricultura};
+\node[small] (T3) [below=10mm of T] {Vapor y\\ferrocarriles};
+\node[small] (T4) [left=12mm of T3] {Telégrafo\\eléctrico};
+\node[small] (T5) [below=10mm of T3] {Incremento de\\la productividad};
+\node[small] (T6) [below=10mm of T5] {Mayor producción\\de bienes y servicios};
+
+\draw[link] (T) -- (T1) node[verb]{incluyeron};
+\draw[link] (T) -- (T2) node[verb]{incluyeron};
+\draw[link] (T) -- (T3) node[verb]{incluyeron};
+\draw[link] (T) -- (T4) node[verb]{incluyeron};
+\draw[link] (T) -- (T5) node[verb]{provocaron};
+\draw[link] (T5) -- (T6) node[verb]{permitió};
+
+% ================== DEMOGRAFÍA ==================
+\node[small] (D1) [above=10mm of D] {Crecimiento\\demográfico};
+\node[small] (D2) [right=12mm of D1] {Aumento sostenido\\de la población};
+\node[small] (D3) [below=10mm of D] {Mejora gradual\\del nivel de vida};
+\node[small] (D4) [left=12mm of D3] {Migraciones\\masivas};
+\node[small] (D5) [below=10mm of D4] {Éxodo rural\\campo $\rightarrow$ ciudad};
+\node[small] (D6) [below=10mm of D3] {Migración\\Europa $\rightarrow$ América};
+\node[small] (D7) [below=10mm of D6] {Transformación\\social y territorial};
+
+\draw[link] (T6) -- (D1) node[verb]{generó};
+\draw[link] (D1) -- (D2) node[verb]{se manifestó en};
+\draw[link] (D1) -- (D3) node[verb]{favoreció};
+\draw[link] (D1) -- (D4) node[verb]{impulsó};
+\draw[link] (D4) -- (D5) node[verb]{incluyeron};
+\draw[link] (D4) -- (D6) node[verb]{incluyeron};
+\draw[link] (D4) -- (D7) node[verb]{transformaron};
+
+% ================== SOCIEDAD ==================
+\node[small] (S1) [left=14mm of S] {Industrialización};
+\node[small] (S2) [below=10mm of S] {Nuevas clases\\sociales};
+\node[small] (S3) [below=10mm of S2] {Burguesía\\industrial};
+\node[small] (S4) [right=12mm of S3] {Proletariado\\urbano};
+\node[small] (S5) [above=10mm of S2] {División\\del trabajo};
+\node[small] (S6) [below=10mm of S4] {Conflictos\\sociales};
+\node[small] (S7) [below=10mm of S6] {Lucha\\de clases};
+\node[small] (S8) [below=10mm of S7] {Críticas al\\capitalismo};
+
+\draw[link] (S1) -- (S2) node[verb]{originó};
+\draw[link] (S2) -- (S3) node[verb]{incluyeron};
+\draw[link] (S2) -- (S4) node[verb]{incluyeron};
+\draw[link] (S5) -- (S6) node[verb]{intensificó};
+\draw[link] (S6) -- (S7) node[verb]{se expresaron en};
+\draw[link] (S7) -- (S8) node[verb]{dio lugar a};
+
+% ================== PRODUCCIÓN ==================
+\node[small] (P1) [right=14mm of P] {Fin del sistema\\feudal};
+\node[small] (P2) [below=10mm of P] {Economía\\capitalista};
+\node[small] (P3) [below=10mm of P2] {Trabajo\\asalariado};
+\node[small] (P4) [left=12mm of P3] {Producción\\para el mercado};
+\node[small] (P5) [right=12mm of P3] {Especialización\\del trabajo};
+
+\draw[link] (P1) -- (P2) node[verb]{dio paso a};
+\draw[link] (P2) -- (P3) node[verb]{se caracterizó por};
+\draw[link] (P2) -- (P4) node[verb]{se caracterizó por};
+\draw[link] (P2) -- (P5) node[verb]{se caracterizó por};
+
+% ================== ECONOMÍA ==================
+\node[small] (E1) [below left=10mm and 0mm of E] {Expansión agrícola\\e industrial};
+\node[small] (E2) [below right=10mm and 0mm of E] {Abaratamiento\\de alimentos};
+\node[small] (E3) [below=10mm of E2] {Beneficio a la\\población urbana};
+\node[small] (E4) [below=10mm of E1] {Perjuicio a\\agricultores europeos};
+\node[small] (E5) [below=10mm of E4] {Gran depresión\\agraria europea};
+\node[small] (E6) [below=10mm of E5] {Nuevas\\migraciones};
+
+\draw[link] (P2) -- (E1) node[verb]{impulsó};
+\draw[link] (E1) -- (E2) node[verb]{provocó};
+\draw[link] (E2) -- (E3) node[verb]{benefició a};
+\draw[link] (E2) -- (E4) node[verb]{perjudicó a};
+\draw[link] (E4) -- (E5) node[verb]{originó};
+\draw[link] (E5) -- (E6) node[verb]{impulsó};
+
+% ================== FINAL ==================
+\node[concept, text width=6.8cm] (F) [below=26mm of E] {La sociedad industrial\\contemporánea};
+
+\draw[link] (C) -- (F) node[verb]{dio origen a};
+
+\end{tikzpicture}
+
+\end{document}
